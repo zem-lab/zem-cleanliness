@@ -1,0 +1,15 @@
+{
+  "sequence": 61,
+  "rank": 105,
+  "particleId": "b4223194-cdc8-4efe-a3b7-ce8279b7a7ca",
+  "taskId": "5b992f20-1aa7-4b3f-93dc-25d2b72060dd",
+  "taskSha256": "ea17167ca07a7dcd3be9e893b79bfe98fa4b4f7e3baf006dee05a057bf8d6c7b",
+  "sourceInputSha256": "cbcaefa09a6208dc0b5f8f4ab2375932ccf665fab079c8c01aad5591a51bd136",
+  "imageSha256": "102a5a37c0199756b5fb0a163de264daaf76a550d2defda5f3b5de1035be41a3",
+  "opticalSha256": "95f9f2cea78d6d6a02e4ca5c5ab91d1f4012e30e8132e38ba7ba10b61b576d71",
+  "historySha256": "6391659c4add70192f2fa0f9e3e9633b35031a5072aacbc981197395bf01bdd9",
+  "labelKind": "unconfirmed_identity_geometric_refusal",
+  "oldStatus": "SUCCEEDED",
+  "oldCenterErrorUm": 399.3306152302588,
+  "policy": "A scored candidate outside the configured 160 um calibrated location bound cannot authorize EDS. This is not a human declaration that the historical target was wrong."
+}

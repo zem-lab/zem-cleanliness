@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZEM Cleanliness 报告数据接口文档</title>
+  <link rel="icon" href="/docs/favicon-32x32.png">
+  <link rel="stylesheet" href="/docs/swagger-ui.css">
+  <style>
+    body { margin: 0; }
+    .topbar { display: none; }
+    #fallback { display: none; padding: 24px; font: 14px/1.7 sans-serif; }
+  </style>
+</head>
+<body>
+<div id="swagger-ui"></div>
+<div id="fallback">
+  <h2>Swagger UI 资源加载失败</h2>
+  <p>接口规范仍然可用：<a href="/openapi.json">openapi.json</a>，可导入 Apifox / Postman / Swagger Editor 查看与调试。</p>
+</div>
+<script src="/docs/swagger-ui-bundle.js"></script>
+<script>
+  window.onload = function () {
+    if (!window.SwaggerUIBundle) {
+      document.getElementById('fallback').style.display = 'block';
+      return;
+    }
+    window.ui = SwaggerUIBundle({
+      url: '/openapi.json',
+      dom_id: '#swagger-ui',
+      deepLinking: true,
+      tryItOutEnabled: true,
+      persistAuthorization: true,
+    });
+  };
+</script>
+</body>
+</html>

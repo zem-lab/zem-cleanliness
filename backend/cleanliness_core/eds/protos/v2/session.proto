@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package zeptools.eds.session.v2;
+
+option csharp_namespace = "ZepTools.EDS.Grpc.V2";
+
+service SessionService {
+  rpc OpenSession (OpenSessionRequest) returns (OpenSessionResponse);
+  rpc CloseSession (CloseSessionRequest) returns (CloseSessionResponse);
+  rpc GetSession (GetSessionRequest) returns (GetSessionResponse);
+}
+
+enum SessionState {
+  SESSION_STATE_UNSPECIFIED = 0;
+  SESSION_STATE_OPEN = 1;
+  SESSION_STATE_CLOSED = 2;
+}
+
+message OpenSessionRequest {
+  string client_name = 1;
+  string client_version = 2;
+}
+
+message OpenSessionResponse {
+  bool success = 1;
+  string session_id = 2;
+  string message = 3;
+}
+
+message CloseSessionRequest {
+  string session_id = 1;
+}
+
+message CloseSessionResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message GetSessionRequest {
+  string session_id = 1;
+}
+
+message GetSessionResponse {
+  bool found = 1;
+  SessionState state = 2;
+  int64 last_seen_unix_ms = 3;
+}

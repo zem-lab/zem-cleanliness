@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "sourceTaskId": "82599546-2f1d-40a8-b986-7fca42d99133",
+  "sourceTaskSha256": "0699d7269201df8cdef42c62dcf5a91c19b9bb83be53f9d429f8b43f92144e02",
+  "sourceCorpus": "matching_expansion_20260918",
+  "sourceId": "sample7",
+  "recordedFieldWidthUm": 1058.3333333333333,
+  "recordedPixelSizeUm": 2.0670572916666665,
+  "imageShape": [512, 512],
+  "userRequest": "对于大颗粒会直接在中心区域打能谱，跳过轮廓匹配环节。",
+  "labelMeaning": "Requested acquisition policy, not a human contour or particle-identity annotation.",
+  "historicalMatchingBehavior": "FAILED_MASK_IDENTITY: 颗粒模板无法完整放入视场",
+  "expectedAcquisitionMode": "large_particle_center_region",
+  "expectedIdentityVerified": false,
+  "expectedPointPx": [256, 256],
+  "cases": [
+    "sample7-rank33-seq3-capture1",
+    "sample7-rank33-seq3-capture2",
+    "sample7-rank101-seq6-capture1",
+    "sample7-rank101-seq6-capture2"
+  ]
+}

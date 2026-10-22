@@ -1,0 +1,95 @@
+{
+  "result_text": "C=78.25\nCu=4.82\nO=14.74\nZn=2.19",
+  "quantify_result_map": {
+    "C": 78.25,
+    "O": 14.74,
+    "Cu": 4.82,
+    "Zn": 2.19
+  },
+  "element_quantifications": [
+    {
+      "element": "C",
+      "weight_percent": 78.25,
+      "weight_percent_sigma": 0.5
+    },
+    {
+      "element": "O",
+      "weight_percent": 14.74,
+      "weight_percent_sigma": 0.42
+    },
+    {
+      "element": "Cu",
+      "weight_percent": 4.82,
+      "weight_percent_sigma": 0.3
+    },
+    {
+      "element": "Zn",
+      "weight_percent": 2.19,
+      "weight_percent_sigma": 0.23
+    }
+  ],
+  "material_classification": {
+    "material_class": "Si/Si-C/Si-N",
+    "parent_class": "Hard particles(HV>1000)",
+    "hardness_label": "HV>1000",
+    "hardness_band": "Above1000",
+    "confidence": 0.25,
+    "is_unclassified": false,
+    "boundary_notes": [
+      "Copper: Cu 4.82±0.3，3σ 区间 3.93–5.71 距下限 5 0.18，贴近通过"
+    ],
+    "warnings": [
+      "Wt% Sigma is unavailable for Z=26; UseError uses the nominal weight percent.",
+      "Wt% Sigma is unavailable for Z=74; UseError uses the nominal weight percent.",
+      "Wt% Sigma is unavailable for Z=22; UseError uses the nominal weight percent.",
+      "Wt% Sigma is unavailable for Z=50; UseError uses the nominal weight percent.",
+      "Wt% Sigma is unavailable for Z=82; UseError uses the nominal weight percent.",
+      "Wt% Sigma is unavailable for Z=28; UseError uses the nominal weight percent.",
+      "Wt% Sigma is unavailable for Z=47; UseError uses the nominal weight percent.",
+      "Wt% Sigma is unavailable for Z=27; UseError uses the nominal weight percent.",
+      "Wt% Sigma is unavailable for Z=13; UseError uses the nominal weight percent.",
+      "Wt% Sigma is unavailable for Z=15; UseError uses the nominal weight percent.",
+      "Wt% Sigma is unavailable for Z=17; UseError uses the nominal weight percent.",
+      "Wt% Sigma is unavailable for Z=20; UseError uses the nominal weight percent.",
+      "Wt% Sigma is unavailable for Z=56; UseError uses the nominal weight percent.",
+      "Wt% Sigma is unavailable for Z=9; UseError uses the nominal weight percent.",
+      "Wt% Sigma is unavailable for Z=14; UseError uses the nominal weight percent.",
+      "Matched a catch-all class with no child criteria."
+    ]
+  },
+  "vda_classification": {
+    "material_class": "brass",
+    "hardness_label": "V1",
+    "hardness_band": "Below400",
+    "confidence": 1,
+    "is_unclassified": false,
+    "matched_criteria": [
+      "zero O; ((E1=Cu AND E2=Zn) OR (E1=Zn AND E2=Cu)) AND Cu>=15 AND Zn>=15"
+    ],
+    "boundary_notes": [
+      "Zn-layer: (Fe+Zn)=31.27 距>=35 3.73，未通过",
+      "Zn-phosphate: (Fe+Zn+P)=31.27 距>=40 8.73，未通过"
+    ]
+  },
+  "oxford_weight_percent": {
+    "C": 78.25,
+    "O": 14.74,
+    "Cu": 4.82,
+    "Zn": 2.19
+  },
+  "vda_analysis_composition": {
+    "Cu": 68.73,
+    "Zn": 31.27,
+    "O": 0
+  },
+  "elapsed_seconds": 2.85,
+  "real_time_seconds": 2.405,
+  "live_time_seconds": 2.143,
+  "target_counts": "50000",
+  "accumulated_counts": "66812",
+  "stop_reason": "SPECTRUM_STOP_REASON_TARGET_REACHED",
+  "started_at": "2026-09-29 14:34:04",
+  "ended_at": "2026-09-29 14:34:07",
+  "quant_method": "default",
+  "classification_report": "real_time_s: 2.405\n  live_time_s: 2.143\n  开始时间: 2026-09-29 14:34:04\n  结束时间: 2026-09-29 14:34:07\n  定量方法: default\n  accumulated_counts: 66812\n  target_counts: 50000\n  stop_reason: TARGET_REACHED 达标\n  采得元素 wt% Sigma\n  C=78.25±0.5\n  O=14.74±0.42\n  Cu=4.82±0.3\n  Zn=2.19±0.23\n  Oxford:wt%\n  C=78.25±0.5\n  O=14.74±0.42\n  Cu=4.82±0.3\n  Zn=2.19±0.23\n  Oxford 分类: Si/Si-C/Si-N · Hard particles(HV>1000) · HV>1000\n  临界元素: \n  - Copper: Cu 4.82±0.3，3σ 区间 3.93–5.71 距下限 5 0.18，贴近通过\n  VDA-扣除C元素 O执行零元素规则后wt%:\n  Cu=68.73\n  Zn=31.27\n  O=0\n  VDA 分类: brass · V1\n  临界元素: \n  - Zn-layer: (Fe+Zn)=31.27 距>=35 3.73，未通过\n  - Zn-phosphate: (Fe+Zn+P)=31.27 距>=40 8.73，未通过"
+}

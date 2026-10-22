@@ -1,0 +1,5 @@
+# Preserve fingerprinted regression data byte-for-byte, including JSON line endings.
+backend/tests/fixtures/human_confirmed_20260918/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+backend/tests/fixtures/matching_expansion_20260918/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+backend/tests/fixtures/real_matching_controls_20260918/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+backend/tests/fixtures/rerun_failures_20260920/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

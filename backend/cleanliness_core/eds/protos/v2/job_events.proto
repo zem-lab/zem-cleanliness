@@ -1,0 +1,135 @@
+syntax = "proto3";
+
+package zeptools.eds.jobs.v2;
+
+option csharp_namespace = "ZepTools.EDS.Grpc.V2";
+
+import "v2/jobs_common.proto";
+
+message JobEvent {
+  string session_id = 1;
+  string job_id = 2;
+  uint64 seq = 3;
+  int64 ts_unix_ms = 4;
+  JobState state = 5;
+
+  oneof payload {
+    JobAccepted accepted = 10;
+    JobProgress progress = 11;
+    JobLog log = 12;
+    JobCompleted completed = 13;
+    JobFailed failed = 14;
+    JobCancelled cancelled = 15;
+    PointMeasured point_measured = 16;
+    SpectrumSnapshot snapshot = 17;
+  }
+}
+
+message JobAccepted {
+  string message = 1;
+}
+
+message JobProgress {
+  double percent = 1;
+  string phase = 2;
+  double elapsed_seconds = 3;
+  double target_seconds = 4;
+  uint64 accumulated_counts = 5;
+}
+
+message JobLog {
+  string level = 1;
+  string text = 2;
+  double elapsed_seconds = 3;
+  double percent = 4;
+  double total_seconds = 5;
+}
+
+enum SpectrumStopReason {
+  SPECTRUM_STOP_REASON_UNSPECIFIED = 0;
+  SPECTRUM_STOP_REASON_TARGET_REACHED = 1;
+  SPECTRUM_STOP_REASON_MAXIMUM_DURATION = 2;
+}
+
+// Instrument quantification for one element. weight_percent is the raw wt%.
+// weight_percent_sigma is unset when the instrument did not report an error bar.
+message ElementQuantification {
+  string element = 1;
+  double weight_percent = 2;
+  optional double weight_percent_sigma = 3;
+}
+
+message JobCompleted {
+  string result_text = 1;
+  repeated ElementMap maps = 2;
+  repeated IndexConcentration index_concentrations = 3;
+  map<string, double> quantify_result_map = 4;
+  MaterialClassification material_classification = 5;
+  MaterialClassification vda_classification = 9;
+  SpectrumImage spectrum_image = 6;
+  double elapsed_seconds = 7;
+  uint64 accumulated_counts = 8;
+  // Same raw wt% as quantify_result_map, plus per-element sigma when available.
+  repeated ElementQuantification element_quantifications = 10;
+  double real_time_seconds = 11;
+  double live_time_seconds = 12;
+  uint64 target_counts = 13;
+  SpectrumStopReason stop_reason = 14;
+  // Composition actually matched to VDA tables: drop non-table-8-5 elements
+  // (including C), normalize, apply table 8-7, normalize again.
+  // A zeroed element is kept as 0. Excluded elements such as C are absent.
+  map<string, double> vda_analysis_composition = 15;
+  // Normalized wt% actually used by Oxford, including C when the instrument reported it.
+  map<string, double> oxford_weight_percent = 16;
+  // Labeled text of the fields above, without the spectrum image.
+  string classification_report = 17;
+  // Local clock when acquisition started, yyyy-MM-dd HH:mm:ss.
+  string started_at = 18;
+  // Oxford is "default". Bruker is the method name actually passed to Quantify.
+  string quant_method = 19;
+  // Local clock when the final result was produced, yyyy-MM-dd HH:mm:ss.
+  string ended_at = 20;
+}
+
+message SpectrumImage {
+  bytes png = 1;
+  string media_type = 2;
+  uint32 width = 3;
+  uint32 height = 4;
+}
+
+message MaterialClassification {
+  string material_class = 1;
+  string parent_class = 2;
+  string hardness_label = 3;
+  string hardness_band = 4;
+  double confidence = 5;
+  repeated string matched_criteria = 6;
+  repeated string warnings = 7;
+  bool is_unclassified = 8;
+  // Elements sitting near a rule threshold. Empty when none are close.
+  repeated string boundary_notes = 9;
+}
+
+message JobFailed {
+  int32 error_code = 1;
+  string error_message = 2;
+}
+
+message JobCancelled {
+  string reason = 1;
+}
+
+message PointMeasured {
+  IndexConcentration result = 1;
+}
+
+message SpectrumSnapshot {
+  SpectrumImage spectrum_image = 1;
+  map<string, double> quantify_result_map = 2;
+  string quantification_text = 3;
+  double percent = 4;
+  double elapsed_seconds = 5;
+  uint64 accumulated_counts = 6;
+  string phase = 7;
+}

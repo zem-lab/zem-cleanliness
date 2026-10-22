@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 1,
+  "sourceCorpus": "human_confirmed_20260918",
+  "sourceCorpusSha256": "ca1149017a76ec81e836d656adb1674d4a70faae8e7a2f23c3fd39349ef3c2e3",
+  "sourceOpticalSha256": "53a8e66cfe7526d056fb77d21697b405da149810a7054cd83a6bd6375db4bddf",
+  "model": {
+    "path": "resources/models/cleanliness/particle_yolo11n_seg_reann_20260811_best.onnx",
+    "sha256": "258c1cd69f2ca79e1f0d489596d64d4dca3c2fd042d981849139d6f20cdc91b6"
+  },
+  "pixelSizeUm": 2.0670572916666665,
+  "labelMeaning": "Deterministically derived controls based on human A-correct/B-wrong identity feedback. These are not raw acquisitions or new human annotations.",
+  "expectedResultsPolicy": "Expected positives preserve target A; background/fragment/duplicate/target-erased controls must reject. Expectations follow the transformations and human identity labels, never the current algorithm output.",
+  "cases": [
+    {
+      "caseId": "rank48-contrast",
+      "sourceCaseId": "82599546-rank48-seq53-capture2",
+      "rank": 48,
+      "sequence": 53,
+      "particleId": "0ff3b8c9-af5f-404a-8648-f76a242483e7",
+      "sourceImage": "sem/0053_attempt2.png",
+      "sourceImageSha256": "8583f46323eddfecd98a86492e764664d536c475433b827a50c1f8eb755c2eba",
+      "image": "images/rank48_contrast.png",
+      "imageSha256": "d3466f6fa476f7f22b843523f1e6ee8a3deb576b1d208f0ef0bfaa0487aa6f38",
+      "condition": "contrast",
+      "derivation": {
+        "factor": 0.8,
+        "offset": 10
+      },
+      "labelKind": "derived_control_not_raw_acquisition",
+      "expectedAccepted": true,
+      "expectedTargetCenterPx": [
+        276.5,
+        245.5
+      ],
+      "knownWrongCenterPx": null
+    },
+    {
+      "caseId": "rank48-noise",
+      "sourceCaseId": "82599546-rank48-seq53-capture2",
+      "rank": 48,
+      "sequence": 53,
+      "particleId": "0ff3b8c9-af5f-404a-8648-f76a242483e7",
+      "sourceImage": "sem/0053_attempt2.png",
+      "sourceImageSha256": "8583f46323eddfecd98a86492e764664d536c475433b827a50c1f8eb755c2eba",
+      "image": "images/rank48_noise.png",
+      "imageSha256": "185815a5f544218af75977cacc13d507177fa0dad6a259c0717ea9c6813ee140",
+      "condition": "noise",
+      "derivation": {
+        "sigma": 2,
+        "seed": 20260918
+      },
+      "labelKind": "derived_control_not_raw_acquisition",
+      "expectedAccepted": true,
+      "expectedTargetCenterPx": [
+        276.5,
+        245.5
+      ],
+      "knownWrongCenterPx": null
+    },
+    {
+      "caseId": "rank48-blur",
+      "sourceCaseId": "82599546-rank48-seq53-capture2",
+      "rank": 48,
+      "sequence": 53,
+      "particleId": "0ff3b8c9-af5f-404a-8648-f76a242483e7",
+      "sourceImage": "sem/0053_attempt2.png",
+      "sourceImageSha256": "8583f46323eddfecd98a86492e764664d536c475433b827a50c1f8eb755c2eba",
+      "image": "images/rank48_blur.png",
+      "imageSha256": "540b038ce73184df4be0b5b6951c303942af486cf23ec8930d07d90a251edbd1",
+      "condition": "blur",
+      "derivation": {
+        "sigma": 0.5
+      },
+      "labelKind": "derived_control_not_raw_acquisition",
+      "expectedAccepted": true,
+      "expectedTargetCenterPx": [
+        276.5,
+        245.5
+      ],
+      "knownWrongCenterPx": null
+    },
+    {
+      "caseId": "rank48-translation",
+      "sourceCaseId": "82599546-rank48-seq53-capture2",
+      "rank": 48,
+      "sequence": 53,
+      "particleId": "0ff3b8c9-af5f-404a-8648-f76a242483e7",
+      "sourceImage": "sem/0053_attempt2.png",
+      "sourceImageSha256": "8583f46323eddfecd98a86492e764664d536c475433b827a50c1f8eb755c2eba",
+      "image": "images/rank48_translation.png",
+      "imageSha256": "ef4f2132bcedfdd89fba1eafc5968361c92b53832c50556b7d6698ffa90d7828",
+      "condition": "translation",
+      "derivation": {
+        "dx": 1,
+        "dy": -1,
+        "border": "REFLECT_101"
+      },
+      "labelKind": "derived_control_not_raw_acquisition",
+      "expectedAccepted": true,
+      "expectedTargetCenterPx": [
+        277.5,
+        244.5
+      ],
+      "knownWrongCenterPx": null
+    },
+    {
+      "caseId": "rank48-target_erased_competitor_remains",
+      "sourceCaseId": "82599546-rank48-seq53-capture2",
+      "rank": 48,
+      "sequence": 53,
+      "particleId": "0ff3b8c9-af5f-404a-8648-f76a242483e7",
+      "sourceImage": "sem/0053_attempt2.png",
+      "sourceImageSha256": "8583f46323eddfecd98a86492e764664d536c475433b827a50c1f8eb755c2eba",
+      "image": "images/rank48_target_erased_competitor_remains.png",
+      "imageSha256": "37e920652e0c037cc3178303cb6ec0799ac72c5df9adbaa25febc801a083bf9d",
+      "condition": "target_erased_competitor_remains",
+      "derivation": {
+        "replaceXyxy": [
+          233,
+          203,
+          319,
+          289
+        ],
+        "donorOffsetPx": [
+          -120,
+          0
+        ]
+      },
+      "labelKind": "derived_control_not_raw_acquisition",
+      "expectedAccepted": false,
+      "expectedTargetCenterPx": null,
+      "knownWrongCenterPx": [
+        465.0,
+        280.0
+      ]
+    },
+    {
+      "caseId": "rank48-identical_competitor",
+      "sourceCaseId": "82599546-rank48-seq53-capture2",
+      "rank": 48,
+      "sequence": 53,
+      "particleId": "0ff3b8c9-af5f-404a-8648-f76a242483e7",
+      "sourceImage": "sem/0053_attempt2.png",
+      "sourceImageSha256": "8583f46323eddfecd98a86492e764664d536c475433b827a50c1f8eb755c2eba",
+      "image": "images/rank48_identical_competitor.png",
+      "imageSha256": "6e41de1c5c0dc31da7ef218f86496f69da2ce1c74a501ef6c421fdef2d1bac1b",
+      "condition": "identical_competitor",
+      "derivation": {
+        "copyFromXyxy": [
+          233,
+          203,
+          319,
+          289
+        ],
+        "copyToCenterPx": [
+          465,
+          280
+        ]
+      },
+      "labelKind": "derived_control_not_raw_acquisition",
+      "expectedAccepted": false,
+      "expectedTargetCenterPx": null,
+      "knownWrongCenterPx": null
+    },
+    {
+      "caseId": "rank48-background_only",
+      "sourceCaseId": "82599546-rank48-seq53-capture2",
+      "rank": 48,
+      "sequence": 53,
+      "particleId": "0ff3b8c9-af5f-404a-8648-f76a242483e7",
+      "sourceImage": "sem/0053_attempt2.png",
+      "sourceImageSha256": "8583f46323eddfecd98a86492e764664d536c475433b827a50c1f8eb755c2eba",
+      "image": "images/rank48_background_only.png",
+      "imageSha256": "cf44673ea103e44b65e8c2b4112043c030f7c5ae4a9ea61a545e09aec1fccdfd",
+      "condition": "background_only",
+      "derivation": {
+        "tiledDonorXyxy": [
+          113,
+          203,
+          199,
+          289
+        ]
+      },
+      "labelKind": "derived_control_not_raw_acquisition",
+      "expectedAccepted": false,
+      "expectedTargetCenterPx": null,
+      "knownWrongCenterPx": null
+    },
+    {
+      "caseId": "rank48-incomplete_target",
+      "sourceCaseId": "82599546-rank48-seq53-capture2",
+      "rank": 48,
+      "sequence": 53,
+      "particleId": "0ff3b8c9-af5f-404a-8648-f76a242483e7",
+      "sourceImage": "sem/0053_attempt2.png",
+      "sourceImageSha256": "8583f46323eddfecd98a86492e764664d536c475433b827a50c1f8eb755c2eba",
+      "image": "images/rank48_incomplete_target.png",
+      "imageSha256": "64d557e0dd39dbdbb906696b7f5e0b4438bf0f9dadf1746f464b68d13d755bb0",
+      "condition": "incomplete_target",
+      "derivation": {
+        "tiledDonorXyxy": [
+          113,
+          203,
+          199,
+          289
+        ],
+        "retainedTargetStripeXyxy": [
+          271,
+          203,
+          281,
+          289
+        ]
+      },
+      "labelKind": "derived_control_not_raw_acquisition",
+      "expectedAccepted": false,
+      "expectedTargetCenterPx": null,
+      "knownWrongCenterPx": null
+    },
+    {
+      "caseId": "rank125-contrast",
+      "sourceCaseId": "82599546-rank125-seq143-capture2",
+      "rank": 125,
+      "sequence": 143,
+      "particleId": "9488977b-490a-4fa1-985d-3bc4e6b2cb8a",
+      "sourceImage": "sem/0143_attempt2.png",
+      "sourceImageSha256": "bfcd9cc243d388dfae3f217e3b35a8e0e14eee19cedd514c169348f0ea709be1",
+      "image": "images/rank125_contrast.png",
+      "imageSha256": "bfd8e919da79f4a4dbdb5063d9ea2c0588bdd831889abeb073d54a5ffe6f5155",
+      "condition": "contrast",
+      "derivation": {
+        "factor": 0.8,
+        "offset": 10
+      },
+      "labelKind": "derived_control_not_raw_acquisition",
+      "expectedAccepted": true,
+      "expectedTargetCenterPx": [
+        371.0,
+        192.0
+      ],
+      "knownWrongCenterPx": null
+    },
+    {
+      "caseId": "rank125-noise",
+      "sourceCaseId": "82599546-rank125-seq143-capture2",
+      "rank": 125,
+      "sequence": 143,
+      "particleId": "9488977b-490a-4fa1-985d-3bc4e6b2cb8a",
+      "sourceImage": "sem/0143_attempt2.png",
+      "sourceImageSha256": "bfcd9cc243d388dfae3f217e3b35a8e0e14eee19cedd514c169348f0ea709be1",
+      "image": "images/rank125_noise.png",
+      "imageSha256": "ae96d2bdcdf6a968bce6dad9a93d6d459e970dba21267a3081eea8993cd47e17",
+      "condition": "noise",
+      "derivation": {
+        "sigma": 2,
+        "seed": 20260918
+      },
+      "labelKind": "derived_control_not_raw_acquisition",
+      "expectedAccepted": true,
+      "expectedTargetCenterPx": [
+        371.0,
+        192.0
+      ],
+      "knownWrongCenterPx": null
+    },
+    {
+      "caseId": "rank125-blur",
+      "sourceCaseId": "82599546-rank125-seq143-capture2",
+      "rank": 125,
+      "sequence": 143,
+      "particleId": "9488977b-490a-4fa1-985d-3bc4e6b2cb8a",
+      "sourceImage": "sem/0143_attempt2.png",
+      "sourceImageSha256": "bfcd9cc243d388dfae3f217e3b35a8e0e14eee19cedd514c169348f0ea709be1",
+      "image": "images/rank125_blur.png",
+      "imageSha256": "07195d419827e8598d4dffa917039d822e6a60245f1708df7649801ea28c48b8",
+      "condition": "blur",
+      "derivation": {
+        "sigma": 0.5
+      },
+      "labelKind": "derived_control_not_raw_acquisition",
+      "expectedAccepted": true,
+      "expectedTargetCenterPx": [
+        371.0,
+        192.0
+      ],
+      "knownWrongCenterPx": null
+    },
+    {
+      "caseId": "rank125-translation",
+      "sourceCaseId": "82599546-rank125-seq143-capture2",
+      "rank": 125,
+      "sequence": 143,
+      "particleId": "9488977b-490a-4fa1-985d-3bc4e6b2cb8a",
+      "sourceImage": "sem/0143_attempt2.png",
+      "sourceImageSha256": "bfcd9cc243d388dfae3f217e3b35a8e0e14eee19cedd514c169348f0ea709be1",
+      "image": "images/rank125_translation.png",
+      "imageSha256": "62a086a922315155662286c8fcdf9fbdd6235bde99c6b4fa625691cdad4a3ce2",
+      "condition": "translation",
+      "derivation": {
+        "dx": 1,
+        "dy": -1,
+        "border": "REFLECT_101"
+      },
+      "labelKind": "derived_control_not_raw_acquisition",
+      "expectedAccepted": true,
+      "expectedTargetCenterPx": [
+        372.0,
+        191.0
+      ],
+      "knownWrongCenterPx": null
+    },
+    {
+      "caseId": "rank125-target_erased_competitor_remains",
+      "sourceCaseId": "82599546-rank125-seq143-capture2",
+      "rank": 125,
+      "sequence": 143,
+      "particleId": "9488977b-490a-4fa1-985d-3bc4e6b2cb8a",
+      "sourceImage": "sem/0143_attempt2.png",
+      "sourceImageSha256": "bfcd9cc243d388dfae3f217e3b35a8e0e14eee19cedd514c169348f0ea709be1",
+      "image": "images/rank125_target_erased_competitor_remains.png",
+      "imageSha256": "bde76ad39dbf959d35172ea129fad2a292a4c50bd4d692f1ee8ecd94ee2b5b65",
+      "condition": "target_erased_competitor_remains",
+      "derivation": {
+        "replaceXyxy": [
+          340,
+          161,
+          402,
+          223
+        ],
+        "donorOffsetPx": [
+          -120,
+          0
+        ]
+      },
+      "labelKind": "derived_control_not_raw_acquisition",
+      "expectedAccepted": false,
+      "expectedTargetCenterPx": null,
+      "knownWrongCenterPx": [
+        132.0,
+        358.0
+      ]
+    },
+    {
+      "caseId": "rank125-identical_competitor",
+      "sourceCaseId": "82599546-rank125-seq143-capture2",
+      "rank": 125,
+      "sequence": 143,
+      "particleId": "9488977b-490a-4fa1-985d-3bc4e6b2cb8a",
+      "sourceImage": "sem/0143_attempt2.png",
+      "sourceImageSha256": "bfcd9cc243d388dfae3f217e3b35a8e0e14eee19cedd514c169348f0ea709be1",
+      "image": "images/rank125_identical_competitor.png",
+      "imageSha256": "fe4bcc7b08efb41c1fc6f436453cd46c824313f9a4efb0503c0b7111fdfba1d3",
+      "condition": "identical_competitor",
+      "derivation": {
+        "copyFromXyxy": [
+          340,
+          161,
+          402,
+          223
+        ],
+        "copyToCenterPx": [
+          132,
+          358
+        ]
+      },
+      "labelKind": "derived_control_not_raw_acquisition",
+      "expectedAccepted": false,
+      "expectedTargetCenterPx": null,
+      "knownWrongCenterPx": null
+    },
+    {
+      "caseId": "rank125-background_only",
+      "sourceCaseId": "82599546-rank125-seq143-capture2",
+      "rank": 125,
+      "sequence": 143,
+      "particleId": "9488977b-490a-4fa1-985d-3bc4e6b2cb8a",
+      "sourceImage": "sem/0143_attempt2.png",
+      "sourceImageSha256": "bfcd9cc243d388dfae3f217e3b35a8e0e14eee19cedd514c169348f0ea709be1",
+      "image": "images/rank125_background_only.png",
+      "imageSha256": "630c863c81b68bc0af82769afe20b31bfca36ab605dc5879d6e99b82a7cc1189",
+      "condition": "background_only",
+      "derivation": {
+        "tiledDonorXyxy": [
+          220,
+          161,
+          282,
+          223
+        ]
+      },
+      "labelKind": "derived_control_not_raw_acquisition",
+      "expectedAccepted": false,
+      "expectedTargetCenterPx": null,
+      "knownWrongCenterPx": null
+    },
+    {
+      "caseId": "rank125-incomplete_target",
+      "sourceCaseId": "82599546-rank125-seq143-capture2",
+      "rank": 125,
+      "sequence": 143,
+      "particleId": "9488977b-490a-4fa1-985d-3bc4e6b2cb8a",
+      "sourceImage": "sem/0143_attempt2.png",
+      "sourceImageSha256": "bfcd9cc243d388dfae3f217e3b35a8e0e14eee19cedd514c169348f0ea709be1",
+      "image": "images/rank125_incomplete_target.png",
+      "imageSha256": "61e99b52664f392cfeb195254cc42ee632f50b4a56fb68c21fcca60aac0bbfe1",
+      "condition": "incomplete_target",
+      "derivation": {
+        "tiledDonorXyxy": [
+          220,
+          161,
+          282,
+          223
+        ],
+        "retainedTargetStripeXyxy": [
+          368,
+          161,
+          374,
+          223
+        ]
+      },
+      "labelKind": "derived_control_not_raw_acquisition",
+      "expectedAccepted": false,
+      "expectedTargetCenterPx": null,
+      "knownWrongCenterPx": null
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "calibrationId": "zem20f-192.168.0.15-two-point-20260721",
+  "description": "光镜 AB 坐标到 Zem20F 实际样品台坐标的两点人工居中反射相似变换",
+  "device": {
+    "host": "192.168.0.15",
+    "port": 61557,
+    "model": "Zem20F"
+  },
+  "source": {
+    "coordinateUnit": "um",
+    "coordinateSpace": "sourceStage",
+    "workpieceId": "Test",
+    "projectId": "example-project-id",
+    "inputSha256": "2098dfc7be3d81b4717bb5b0a7d3f281fa9b84fa5443ea3b0123cfefdf41c5f4",
+    "requireExactInput": false
+  },
+  "transform": {
+    "model": "2D reflected similarity",
+    "matrix": [
+      [
+        0.707438993319717,
+        0.7038087476911895
+      ],
+      [
+        0.7038087476911895,
+        -0.707438993319717
+      ]
+    ],
+    "translation": [
+      -19926.70484021841,
+      -21968.82102970992
+    ],
+    "equation": {
+      "stageX": "0.7074389933*abX +0.7038087477*abY -19926.704840",
+      "stageY": "0.7038087477*abX -0.7074389933*abY -21968.821030"
+    }
+  },
+  "validStageRoi": {
+    "centerUm": [
+      1013.6051769934911,
+      869.1706924849896
+    ],
+    "radiusUm": 25798.31079908176
+  },
+  "imaging": {
+    "magnification": 120,
+    "fieldSizeUm": 1058.3333333333333,
+    "imageShape": [
+      512,
+      512
+    ],
+    "pixelSizeUm": 2.0670572916666665,
+    "detector": "BSE",
+    "fieldRotationDeg": 0
+  },
+  "anchors": [
+    {
+      "sequence": 1,
+      "opticalAbUm": [
+        17765.608304642414,
+        10852.906859323759
+      ],
+      "centeredStageUm": [
+        279.75,
+        -17143.0
+      ]
+    },
+    {
+      "sequence": 2,
+      "opticalAbUm": [
+        45653.83163756462,
+        -43.8270407256823
+      ],
+      "centeredStageUm": [
+        12339.75,
+        10193.75
+      ]
+    }
+  ],
+  "audit": {
+    "calibratedAt": "2026-07-21T15:51:38+08:00",
+    "method": "two-point manual particle centering",
+    "independentValidationSequence": 6,
+    "independentValidationResult": "新矩阵直接移动后，用户确认颗粒位于视场中心",
+    "liveValidation": {
+      "capturedCount": 30,
+      "acceptedAutomaticMatches": 25,
+      "meanCenterErrorUm": 53.03508566757657,
+      "p95CenterErrorUm": 115.90555603195008,
+      "maximumCenterErrorUm": 162.18498233743102
+    },
+    "note": "两点锚点残差为零不代表全场误差；独立实拍统计用于估计实际定位精度。"
+  }
+}

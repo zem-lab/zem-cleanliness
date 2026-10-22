@@ -1,0 +1,8 @@
+{
+  "sourceImage": "C:\\path\\to\\ZEM Cleanliness\\documents\\tasks\\b7efbb36-c863-4c0b-9d20-0a003c570140\\tiles\\00001.png",
+  "sourceSha256": "fae9e59306b7cd740be935277949ff895a7cb04cea063ae1fc2324fc60304d43",
+  "responseSha256": "aca8d206ea440b48f737a61645606c0540b8cea8b01375e7372abbe7f163258d",
+  "baselineGit": "fa0bf7c4b86e5f4350906a589b9c3170fdcaa3e1",
+  "classification": "Compatibility baseline only; not human ground truth",
+  "scoreThreshold": 0.01
+}

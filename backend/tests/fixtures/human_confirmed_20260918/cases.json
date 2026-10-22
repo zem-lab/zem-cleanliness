@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "sourceTaskId": "82599546-2f1d-40a8-b986-7fca42d99133",
+  "sourceTaskSha256": "0699d7269201df8cdef42c62dcf5a91c19b9bb83be53f9d429f8b43f92144e02",
+  "sourceOpticalSha256": "cbcaefa09a6208dc0b5f8f4ab2375932ccf665fab079c8c01aad5591a51bd136",
+  "opticalSubsetSha256": "53a8e66cfe7526d056fb77d21697b405da149810a7054cd83a6bd6375db4bddf",
+  "sourceReportCompletedAt": "2026-09-17T17:25:12.987368+08:00",
+  "reviewedVisualizationSha256": "2ecb72fa94ddb8f81b196725499dcec753682ebc185395c3bb3a13d98dbe966c",
+  "feedback": {
+    "date": "2026-09-18",
+    "source": "user_in_conversation",
+    "verbatim": "我可以 肯定 sem图上两个图的 A就是 正确的。",
+    "meaning": "报告颗粒 48 和 125 的可视化中，A 是目标颗粒，B 是另一颗粒。",
+    "reviewedAttempt": 2,
+    "scope": "确认颗粒身份，不是人工测量中心或逐像素轮廓；第 1 次采图作为重复采集支持证据，未单独声称逐帧人工复核。"
+  },
+  "model": {
+    "path": "resources/models/cleanliness/particle_yolo11n_seg_reann_20260811_best.onnx",
+    "sha256": "258c1cd69f2ca79e1f0d489596d64d4dca3c2fd042d981849139d6f20cdc91b6"
+  },
+  "pixelSizeUm": 2.0670572916666665,
+  "modelAndMatchingCodeAtDiagnosis": {
+    "backend\\cleanliness_core\\cleanliness_detection.py": "984e91c587eff83a4a18fa57347fd38bc4b711171c11ef03ab152dd9c735ad75",
+    "backend\\cleanliness_core\\particle_refinement.py": "858256074fb26fbfc269a2a7cbb4c4bbb8028707e9a7346d0050c0ab0d5a6139"
+  },
+  "annotationPolicy": "人工身份标签与历史 FAILED_MASK_IDENTITY 分开保存；不得用历史状态覆盖人工标签。",
+  "coordinatePolicy": "中心是原诊断模板锚点，用于关联人工确认对象；12 px 为测试对象关联容差，不是人工标注精度或算法放行阈值。",
+  "associationTolerancePx": 12.0,
+  "changeHistory": [
+    {
+      "date": "2026-09-18",
+      "oldImplementationBehavior": "FAILED_MASK_IDENTITY / AMBIGUOUS",
+      "newImplementationBehavior": "MATCH_BY_SHAPE_CONSENSUS; final measured contour selects A",
+      "reason": "两种实测轮廓共同支持原模板 A；最终轮廓门槛仍通过。原始失败记录与人工标签没有覆盖。",
+      "evidence": "artifacts/shape_consensus_20260918/final_v2/results.json; test_human_confirmed_matching_regression.py",
+      "testChange": "两个严格 XFAIL 实际变为 XPASS 后，移除标记并保留接受 A 的断言；四帧安全回归加强为必须接受 A，不能选 B。"
+    },
+    {
+      "date": "2026-09-18",
+      "oldEvidenceStatus": "identity_unconfirmed",
+      "newEvidenceStatus": "A_identity_human_confirmed",
+      "reason": "用户明确确认两图 A 正确；生产算法和旧行为基线未修改。"
+    }
+  ],
+  "cases": [
+    {
+      "caseId": "82599546-rank48-seq53-capture1",
+      "reportRank": 48,
+      "sequence": 53,
+      "particleId": "0ff3b8c9-af5f-404a-8648-f76a242483e7",
+      "attempt": 1,
+      "reviewStatus": "linked_repeat_capture",
+      "image": "sem/0053_attempt1.png",
+      "imageSha256": "6f1ce1976f4fef945ac1c59be2316826e5fe636db9ccab3930d5218e0cdc3dbf",
+      "mask": "masks/0053.png",
+      "maskSha256": "633f67373c238e9128d0d570be404aba3bca1db2914db3c190e5fde2bb6dca41",
+      "historicalRecord": "history/0053.json",
+      "historicalRecordSha256": "6e53c529f64f5db3064cd202f482786683d4bb68542f9eb93d6226d69e3c7a47",
+      "correctTarget": {
+        "label": "A",
+        "referenceCenterPx": [
+          276.5,
+          244.5
+        ],
+        "referenceSource": "historical_template_peak",
+        "identityEvidence": "same_task_repeat_capture_correspondence"
+      },
+      "wrongTarget": {
+        "label": "B",
+        "referenceCenterPx": [
+          465.0,
+          280.0
+        ]
+      },
+      "historicalBehavior": {
+        "accepted": false,
+        "decisionStatus": "FAILED_MASK_IDENTITY",
+        "templateStatus": "AMBIGUOUS",
+        "score": 0.9061652421951294,
+        "runnerUpScore": 0.8428098559379578,
+        "margin": 0.06335538625717163
+      },
+      "desiredBehavior": {
+        "accepted": true,
+        "targetLabel": "A",
+        "mustNotSelect": [
+          "B"
+        ]
+      },
+      "knownIssue": "false_rejection_due_to_distinct_particle_competition"
+    },
+    {
+      "caseId": "82599546-rank48-seq53-capture2",
+      "reportRank": 48,
+      "sequence": 53,
+      "particleId": "0ff3b8c9-af5f-404a-8648-f76a242483e7",
+      "attempt": 2,
+      "reviewStatus": "human_confirmed",
+      "image": "sem/0053_attempt2.png",
+      "imageSha256": "8583f46323eddfecd98a86492e764664d536c475433b827a50c1f8eb755c2eba",
+      "mask": "masks/0053.png",
+      "maskSha256": "633f67373c238e9128d0d570be404aba3bca1db2914db3c190e5fde2bb6dca41",
+      "historicalRecord": "history/0053.json",
+      "historicalRecordSha256": "6e53c529f64f5db3064cd202f482786683d4bb68542f9eb93d6226d69e3c7a47",
+      "correctTarget": {
+        "label": "A",
+        "referenceCenterPx": [
+          276.5,
+          245.5
+        ],
+        "referenceSource": "historical_template_peak",
+        "identityEvidence": "user_confirmed_visualization"
+      },
+      "wrongTarget": {
+        "label": "B",
+        "referenceCenterPx": [
+          465.0,
+          280.0
+        ]
+      },
+      "historicalBehavior": {
+        "accepted": false,
+        "decisionStatus": "FAILED_MASK_IDENTITY",
+        "templateStatus": "AMBIGUOUS",
+        "score": 0.9048498272895813,
+        "runnerUpScore": 0.8398729562759399,
+        "margin": 0.06497687101364136
+      },
+      "desiredBehavior": {
+        "accepted": true,
+        "targetLabel": "A",
+        "mustNotSelect": [
+          "B"
+        ]
+      },
+      "knownIssue": "false_rejection_due_to_distinct_particle_competition"
+    },
+    {
+      "caseId": "82599546-rank125-seq143-capture1",
+      "reportRank": 125,
+      "sequence": 143,
+      "particleId": "9488977b-490a-4fa1-985d-3bc4e6b2cb8a",
+      "attempt": 1,
+      "reviewStatus": "linked_repeat_capture",
+      "image": "sem/0143_attempt1.png",
+      "imageSha256": "9fec114b3ffa4425aa28aa6dcb06b1816d16af14a0bc25116f28e79b0a1aa6a5",
+      "mask": "masks/0143.png",
+      "maskSha256": "fb1a121a4e5b3c7287cad4cbc56ddf4e3c72aa1453c33b136858aba28c42e3d7",
+      "historicalRecord": "history/0143.json",
+      "historicalRecordSha256": "7bf345aadef463420a8fd4a7213e590606b74f96e74dca08c0855ac9afe9d87e",
+      "correctTarget": {
+        "label": "A",
+        "referenceCenterPx": [
+          371.0,
+          192.0
+        ],
+        "referenceSource": "historical_template_peak",
+        "identityEvidence": "same_task_repeat_capture_correspondence"
+      },
+      "wrongTarget": {
+        "label": "B",
+        "referenceCenterPx": [
+          132.0,
+          358.0
+        ]
+      },
+      "historicalBehavior": {
+        "accepted": false,
+        "decisionStatus": "FAILED_MASK_IDENTITY",
+        "templateStatus": "AMBIGUOUS",
+        "score": 0.9700579643249512,
+        "runnerUpScore": 0.9396626949310303,
+        "margin": 0.0303952693939209
+      },
+      "desiredBehavior": {
+        "accepted": true,
+        "targetLabel": "A",
+        "mustNotSelect": [
+          "B"
+        ]
+      },
+      "knownIssue": "false_rejection_due_to_distinct_particle_competition"
+    },
+    {
+      "caseId": "82599546-rank125-seq143-capture2",
+      "reportRank": 125,
+      "sequence": 143,
+      "particleId": "9488977b-490a-4fa1-985d-3bc4e6b2cb8a",
+      "attempt": 2,
+      "reviewStatus": "human_confirmed",
+      "image": "sem/0143_attempt2.png",
+      "imageSha256": "bfcd9cc243d388dfae3f217e3b35a8e0e14eee19cedd514c169348f0ea709be1",
+      "mask": "masks/0143.png",
+      "maskSha256": "fb1a121a4e5b3c7287cad4cbc56ddf4e3c72aa1453c33b136858aba28c42e3d7",
+      "historicalRecord": "history/0143.json",
+      "historicalRecordSha256": "7bf345aadef463420a8fd4a7213e590606b74f96e74dca08c0855ac9afe9d87e",
+      "correctTarget": {
+        "label": "A",
+        "referenceCenterPx": [
+          371.0,
+          192.0
+        ],
+        "referenceSource": "historical_template_peak",
+        "identityEvidence": "user_confirmed_visualization"
+      },
+      "wrongTarget": {
+        "label": "B",
+        "referenceCenterPx": [
+          132.0,
+          358.0
+        ]
+      },
+      "historicalBehavior": {
+        "accepted": false,
+        "decisionStatus": "FAILED_MASK_IDENTITY",
+        "templateStatus": "AMBIGUOUS",
+        "score": 0.9705585241317749,
+        "runnerUpScore": 0.939470112323761,
+        "margin": 0.031088411808013916
+      },
+      "desiredBehavior": {
+        "accepted": true,
+        "targetLabel": "A",
+        "mustNotSelect": [
+          "B"
+        ]
+      },
+      "knownIssue": "false_rejection_due_to_distinct_particle_competition"
+    }
+  ]
+}

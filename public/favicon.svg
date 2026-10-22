@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="20" y1="16" x2="236" y2="240" gradientUnits="userSpaceOnUse"><stop stop-color="#17385f"/><stop offset="1" stop-color="#0b1e39"/></linearGradient>
+    <linearGradient id="bolt" x1="64" y1="34" x2="144" y2="185" gradientUnits="userSpaceOnUse"><stop stop-color="#b984ff"/><stop offset="1" stop-color="#6a35d8"/></linearGradient>
+    <linearGradient id="glass" x1="149" y1="127" x2="205" y2="189" gradientUnits="userSpaceOnUse"><stop stop-color="#5fe1ff"/><stop offset="1" stop-color="#1aa8d4"/></linearGradient>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="52" fill="url(#bg)"/>
+  <path d="M122 29c-3 0-6 2-8 5L61 120c-5 8 1 18 10 18h43l-16 77c-2 11 12 16 18 7l54-88c5-8-1-18-10-18h-43l17-77c1-5-4-10-9-10h-3Z" fill="url(#bolt)" stroke="#d6bbff" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="164" cy="154" r="48" fill="#0d2746" stroke="url(#glass)" stroke-width="13"/>
+  <path d="m197 188 30 30" stroke="#5fe1ff" stroke-width="15" stroke-linecap="round"/>
+  <path d="m142 155 14 14 29-31" stroke="#e9fcff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="164" cy="154" r="35" stroke="#a5efff" stroke-opacity=".45" stroke-width="2"/>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "name": "zem-cleanliness-mcp",
+  "private": true,
+  "version": "0.1.0",
+  "description": "ZEPTOOLS 清洁度软件 MCP 服务器：Agent 通过 Playwright 驱动真实 Electron 界面",
+  "main": "server.cjs",
+  "scripts": {
+    "start": "node server.cjs",
+    "smoke": "node smoke.cjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.0",
+    "playwright-core": "^1.62.1",
+    "zod": "^3.25.0"
+  }
+}

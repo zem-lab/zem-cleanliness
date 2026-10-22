@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package zeptools.eds.jobs.v2;
+
+option csharp_namespace = "ZepTools.EDS.Grpc.V2";
+
+enum JobState {
+  JOB_STATE_UNSPECIFIED = 0;
+  JOB_STATE_PENDING = 1;
+  JOB_STATE_RUNNING = 2;
+  JOB_STATE_COMPLETED = 3;
+  JOB_STATE_FAILED = 4;
+  JOB_STATE_CANCELLED = 5;
+}
+
+message Segment {
+  uint32 y = 1;
+  uint32 x_start = 2;
+  int32 x_count = 3;
+}
+
+message ElementConcentration {
+  string element = 1;
+  double concentration = 2;
+}
+
+message IndexConcentration {
+  int32 index = 1;
+  repeated ElementConcentration concentrations = 2;
+}
+
+message ElementMap {
+  string element = 1;
+  bytes image = 2;
+  string url = 3;
+}

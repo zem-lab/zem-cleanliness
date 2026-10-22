@@ -1,0 +1,57 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+.venv/
+dist
+dist-ssr
+*.local
+
+# Generated desktop/backend packages
+backend-build/
+backend-dist/
+backend-spec/
+release/
+offline-release/
+
+# Test and runtime data
+.tmp/
+playwright-artifacts/
+tasks/
+__pycache__/
+*.py[cod]
+
+# Local acquisition evidence and generated reports (source tools live in scripts/)
+/artifacts/
+/data/
+
+# Models and test images stay local; do not publish
+/resources/models/
+*.onnx
+backend/tests/fixtures/**/*.png
+backend/tests/fixtures/**/*.jpg
+backend/tests/fixtures/**/*.jpeg
+backend/tests/fixtures/**/*.bmp
+backend/tests/fixtures/**/*.gif
+backend/tests/fixtures/**/optical.json
+backend/tests/fixtures/**/*optical.json
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local agent rules (personal config, not shared)
+.cursor/

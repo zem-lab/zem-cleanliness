@@ -1,0 +1,155 @@
+{
+  "rank": 79,
+  "sequence": 7,
+  "particleId": "85a060b1-5520-4d11-a343-8d6301cf67cd",
+  "label": "metal",
+  "status": "FAILED",
+  "lengthUm": 1007.8,
+  "widthUm": 800.7,
+  "areaUm2": 568660.8,
+  "equivalentDiameterUm": 800.7,
+  "opticalAbPositionUm": {
+    "x": 26510.69001309338,
+    "y": 6924.239318551097
+  },
+  "targetStageUm": {
+    "x": 4201.881514853536,
+    "y": -5560.523544352047
+  },
+  "images": {
+    "opticalImage": "optical/0007.png"
+  },
+  "captureAttempts": [
+    {
+      "attempt": 1,
+      "status": "FAILED_MASK_IDENTITY",
+      "rawPath": "sem/0007_attempt1.png",
+      "displayPath": "sem/0007_attempt1.u8.png",
+      "match": {
+        "status": "FAILED_MASK_IDENTITY",
+        "confidence": "low",
+        "reason": "掩码定位复核未通过：颗粒模板无法完整放入视场；不能采谱",
+        "best": {
+          "boxPx": [
+            36,
+            34,
+            357,
+            455
+          ],
+          "centerPx": [
+            138.20584281282316,
+            234.61726990692864
+          ],
+          "distancePx": 119.71919066578451,
+          "lengthRatio": 0.8327299666765893,
+          "widthRatio": 0.754227963575172,
+          "areaRatio": 0.2906285007920551,
+          "contrastZ": 0.2628597172252908,
+          "signalZ": 6.01986029854522,
+          "channel": "bright",
+          "score": 1.8226375543658562,
+          "thresholdZ": 2.2,
+          "closeKernelPx": 17
+        },
+        "secondScore": null,
+        "scoreMargin": null,
+        "candidateCount": 6
+      },
+      "maskVerification": {
+        "status": "NO_MATCH",
+        "reason": "颗粒模板无法完整放入视场",
+        "accepted": false,
+        "minimumMaskIoU": 0.5,
+        "initialCandidateCenterPx": [
+          138.20584281282316,
+          234.61726990692864
+        ]
+      },
+      "centerSampling": null
+    },
+    {
+      "attempt": 2,
+      "status": "FAILED_MASK_IDENTITY",
+      "rawPath": "sem/0007_attempt2.png",
+      "displayPath": "sem/0007_attempt2.u8.png",
+      "match": {
+        "status": "FAILED_MASK_IDENTITY",
+        "confidence": "low",
+        "reason": "掩码定位复核未通过：颗粒模板无法完整放入视场；不能采谱",
+        "best": {
+          "boxPx": [
+            38,
+            36,
+            511,
+            454
+          ],
+          "centerPx": [
+            207.53914384882376,
+            218.8839423447744
+          ],
+          "distancePx": 61.04143113305116,
+          "lengthRatio": 0.9557935085499768,
+          "widthRatio": 1.0377882243661793,
+          "areaRatio": 0.311726867654105,
+          "contrastZ": 0.2288093970838645,
+          "signalZ": 6.88015696104413,
+          "channel": "bright",
+          "score": 0.7892333957174172,
+          "thresholdZ": 3.0,
+          "closeKernelPx": 35
+        },
+        "secondScore": null,
+        "scoreMargin": null,
+        "candidateCount": 6
+      },
+      "maskVerification": {
+        "status": "NO_MATCH",
+        "reason": "颗粒模板无法完整放入视场",
+        "accepted": false,
+        "minimumMaskIoU": 0.5,
+        "initialCandidateCenterPx": [
+          207.53914384882376,
+          218.8839423447744
+        ]
+      },
+      "centerSampling": null
+    }
+  ],
+  "energySpectrum": null,
+  "error": "连续 2 次采图/匹配失败：掩码定位复核未通过：颗粒模板无法完整放入视场；不能采谱",
+  "actualStageUm": {
+    "x": 4201.75,
+    "y": -5560.0
+  },
+  "stagePositionErrorUm": 0.5398100084851754,
+  "match": {
+    "status": "FAILED_MASK_IDENTITY",
+    "confidence": "low",
+    "reason": "掩码定位复核未通过：颗粒模板无法完整放入视场；不能采谱",
+    "best": {
+      "boxPx": [
+        38,
+        36,
+        511,
+        454
+      ],
+      "centerPx": [
+        207.53914384882376,
+        218.8839423447744
+      ],
+      "distancePx": 61.04143113305116,
+      "lengthRatio": 0.9557935085499768,
+      "widthRatio": 1.0377882243661793,
+      "areaRatio": 0.311726867654105,
+      "contrastZ": 0.2288093970838645,
+      "signalZ": 6.88015696104413,
+      "channel": "bright",
+      "score": 0.7892333957174172,
+      "thresholdZ": 3.0,
+      "closeKernelPx": 35
+    },
+    "secondScore": null,
+    "scoreMargin": null,
+    "candidateCount": 6
+  }
+}

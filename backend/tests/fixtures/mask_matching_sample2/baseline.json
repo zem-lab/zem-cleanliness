@@ -1,0 +1,854 @@
+{
+  "schemaVersion": 1,
+  "baselineCommit": "ec15401",
+  "sourceTaskId": "e89dead0-ec77-477f-af60-dd36948e213b",
+  "sourceSha256": "e65c83a1bc2895f75b320a389b8683892c224c39fe66d550573b20affeeb7032",
+  "opticalSubsetSha256": "d86a4f22993baaafd1bc626afaac54a0f1b8dd1fd676be51d3ad85ac5f6de724",
+  "pixelSizeUm": 2.0670572916666665,
+  "model": "resources/models/cleanliness/particle_yolo11n_seg_reann_20260811_best.onnx",
+  "modelSha256": "258c1cd69f2ca79e1f0d489596d64d4dca3c2fd042d981849139d6f20cdc91b6",
+  "centerTolerancePx": 3,
+  "labelMeaning": "Accepted baseline behavior approved for manual testing; not independent identity ground truth. Known wrong centers were reported by the user.",
+  "cases": [
+    {
+      "rank": 1,
+      "sequence": 1,
+      "particleId": "94fa2ca2-774c-4299-b9de-73eef56d79b6",
+      "ecdUm": 116.1,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        167.6863028550777,
+        305.2320202385255
+      ],
+      "imageSha256": "0ded76a8012f47fc874df3f3f1208f75f15f306cf8a41dc9aa9334583ec6a9b2",
+      "image": "sem/0001.png",
+      "minimumIoU": 0.7658833619210977,
+      "knownWrongCenterPx": null,
+      "legacyExpected": {
+        "accepted": false,
+        "status": "FAILED_MASK_IDENTITY"
+      }
+    },
+    {
+      "rank": 15,
+      "sequence": 76,
+      "particleId": "298ee6dd-aa15-4a4b-bf24-acd93624d665",
+      "ecdUm": 80.9,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        286.35197132616486,
+        209.47025089605734
+      ],
+      "imageSha256": "d550fa8e05cd06cd96d876d38a58e9cd8562d1b90ebde29ba246bd36139b87f0",
+      "image": "sem/0076.png",
+      "minimumIoU": 0.7951404494382022,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 53,
+      "sequence": 67,
+      "particleId": "4594ff3a-58e2-4bf8-aebf-a34898859772",
+      "ecdUm": 91.8,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        267.24772313296904,
+        212.77777777777777
+      ],
+      "imageSha256": "8c9f163d48ffa34c6ea9563bb1bda6160bfa52b564ccdc0547af69c86165fef8",
+      "image": "sem/0067.png",
+      "minimumIoU": 0.8244927536231884,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 60,
+      "sequence": 5,
+      "particleId": "d3446b8b-ea39-4034-b173-b410c9864174",
+      "ecdUm": 162.2,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        306.25123433345993,
+        186.8101025446259
+      ],
+      "imageSha256": "2eab7e77803919925e3311a3ded7f36e983ab59e08d18edf0983403f028fa8ac",
+      "image": "sem/0005.png",
+      "minimumIoU": 0.8422580645161291,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 86,
+      "sequence": 21,
+      "particleId": "2f359cb9-e397-4372-a0bb-10535c66bacb",
+      "ecdUm": 94.7,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        315.9107142857143,
+        180.91629464285714
+      ],
+      "imageSha256": "804e6fd9b2749ebb176c4eece3ebe10b4c4acc4155036e9f40396a7ebe062f6d",
+      "image": "sem/0021.png",
+      "minimumIoU": 0.6549583537481627,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 97,
+      "sequence": 8,
+      "particleId": "6fb4fff7-78dd-4720-99ba-22e8e053a029",
+      "ecdUm": 119.1,
+      "accepted": false,
+      "status": "FAILED_MASK_IDENTITY",
+      "newCenterPx": [
+        216.57285429141717,
+        244.59680638722554
+      ],
+      "imageSha256": "67b2b6a9d31b011cf658d40fd5b3d151ef194a3e185cd5cb5db26dffac649e9b",
+      "image": "sem/0008.png",
+      "minimumIoU": null,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 102,
+      "sequence": 14,
+      "particleId": "0e8cab5a-261b-4477-8441-f5aa840c6778",
+      "ecdUm": 118.7,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        301.81544597534446,
+        177.56671501087743
+      ],
+      "imageSha256": "213c526e3e4d4763e0aa7cefeef190cfca77444ccfe11991057796b1d6dd81e7",
+      "image": "sem/0014.png",
+      "minimumIoU": 0.827391304347826,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 119,
+      "sequence": 45,
+      "particleId": "fba329f5-1fc9-49f2-afb9-e59782cf446c",
+      "ecdUm": 99.3,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        282.176116407426,
+        170.7571500250878
+      ],
+      "imageSha256": "87ba74274dd9a9969931eb954b20d17070522151309b464489770af7b2f9ba2d",
+      "image": "sem/0045.png",
+      "minimumIoU": 0.8364702994599902,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 121,
+      "sequence": 119,
+      "particleId": "f7f65ce6-f56c-4d8f-b852-8b03fa061379",
+      "ecdUm": 84.2,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        307.7861313868613,
+        156.5021897810219
+      ],
+      "imageSha256": "cff81be4016cbd10f0b9c35513e1b21940db03cbb2a264b8432a04a02d763519",
+      "image": "sem/0119.png",
+      "minimumIoU": 0.8595966029723991,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 125,
+      "sequence": 6,
+      "particleId": "643684c2-ebb3-4522-8214-bf2d21ac986c",
+      "ecdUm": 124.0,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        254.39294532627866,
+        161.45679012345678
+      ],
+      "imageSha256": "3288ae67fee88b5b99f40c215ec1be6787ffc27313f9465e23b7c141573f9ce4",
+      "image": "sem/0006.png",
+      "minimumIoU": 0.7435376915858617,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 183,
+      "sequence": 3,
+      "particleId": "1ef7309e-d26e-408b-b544-b23d072a4891",
+      "ecdUm": 99.9,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        282.13159101329666,
+        171.31911966987622
+      ],
+      "imageSha256": "09dd872bd1a4e266f40afd953813b3f0b62ffa2783b7658cec3abc347da1bfd6",
+      "image": "sem/0003.png",
+      "minimumIoU": 0.6581720430107527,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 203,
+      "sequence": 42,
+      "particleId": "bf7c14f7-eed3-4063-98f6-41a9f9b37837",
+      "ecdUm": 110.1,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        294.09936479128856,
+        174.72912885662433
+      ],
+      "imageSha256": "6b8ead53773bd1f2aea885e63b825c724b22837620879dcbd6c7766a97967c12",
+      "image": "sem/0042.png",
+      "minimumIoU": 0.8686802894848872,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 217,
+      "sequence": 20,
+      "particleId": "a0283d26-668e-4a51-8244-835bb57d95aa",
+      "ecdUm": 100.8,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        302.5382208314707,
+        177.34286991506482
+      ],
+      "imageSha256": "aa007b6c1e13aa8f63770585c8f0849992ce4024c02636e26fb2df959208d37a",
+      "image": "sem/0020.png",
+      "minimumIoU": 0.8292132505175983,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 243,
+      "sequence": 9,
+      "particleId": "a68cbdc4-a176-417c-838e-17d6a730d7db",
+      "ecdUm": 105.5,
+      "accepted": false,
+      "status": "FAILED_MASK_IDENTITY",
+      "newCenterPx": [
+        268.4916666666667,
+        270.31666666666666
+      ],
+      "imageSha256": "b51d051492233eb5b90cfda4d9fc610057dd485f7fdd187984f9ced25836ae69",
+      "image": "sem/0009.png",
+      "minimumIoU": null,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 291,
+      "sequence": 178,
+      "particleId": "95ecc945-4a8b-4c55-aeb9-6392733330cd",
+      "ecdUm": 82.7,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        290.10743801652893,
+        192.1795642374155
+      ],
+      "imageSha256": "f7e61bb7adecb9288f346e4fddd9469173d02a496416cae3aaf077263b3712b7",
+      "image": "sem/0178.png",
+      "minimumIoU": 0.8940506329113924,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 339,
+      "sequence": 83,
+      "particleId": "ec576499-abff-46cc-bcbc-3c2ee685f0dc",
+      "ecdUm": 82.2,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        328.06040268456377,
+        191.97181208053692
+      ],
+      "imageSha256": "6f99e01ee79cb5a6e659260c0b74614f153fe67de5ed912180cd6ebce50d82ce",
+      "image": "sem/0083.png",
+      "minimumIoU": 0.8570662460567823,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 367,
+      "sequence": 60,
+      "particleId": "16ac9401-1698-4dc4-aec6-672f0c5f143c",
+      "ecdUm": 84.6,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        286.3670175438597,
+        188.59929824561402
+      ],
+      "imageSha256": "4a98b37cd4e5e7964b1d9d315684c85debc558d9448eb59caedfda5699d5f998",
+      "image": "sem/0060.png",
+      "minimumIoU": 0.8484340659340659,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 380,
+      "sequence": 34,
+      "particleId": "ea181abd-f475-40ee-acb1-56958fc6de14",
+      "ecdUm": 102.3,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        317.68517624336073,
+        158.82906808305165
+      ],
+      "imageSha256": "833a692f589b286bde33ee0fca69fbe87c5f2a57d05f323bb183786a690f7359",
+      "image": "sem/0034.png",
+      "minimumIoU": 0.825813953488372,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 386,
+      "sequence": 52,
+      "particleId": "fb7c928f-da2c-43cd-9ec5-2ca7ac09a44a",
+      "ecdUm": 100.8,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        282.11025886864815,
+        179.31495685522532
+      ],
+      "imageSha256": "8b0f11e83c3e55e6a7bec36c360ace7fe1e21d929334b39c85b13e22c15925c5",
+      "image": "sem/0052.png",
+      "minimumIoU": 0.7958660508083141,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 420,
+      "sequence": 100,
+      "particleId": "03b3555c-2b08-4bb2-8192-60b9b79c3da7",
+      "ecdUm": 87.5,
+      "accepted": false,
+      "status": "FAILED_MASK_IDENTITY",
+      "newCenterPx": [
+        323.7852564102564,
+        166.61485042735043
+      ],
+      "imageSha256": "3c2a1083d3afcb8dce9715e2dd28d044962f9fd3f383371e898e0d680c6b2d8a",
+      "image": "sem/0100.png",
+      "minimumIoU": null,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 483,
+      "sequence": 28,
+      "particleId": "a265fb18-3a12-4aa3-9592-445f99cf2ada",
+      "ecdUm": 95.1,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        272.1887436043206,
+        163.9113132461626
+      ],
+      "imageSha256": "2a3c92dc40f6d80b24efc25256c1e2cbb71754291a861da27b531c3009b37d06",
+      "image": "sem/0028.png",
+      "minimumIoU": 0.806734693877551,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 487,
+      "sequence": 29,
+      "particleId": "75ef774d-1f84-44aa-a2fd-9d93153dc332",
+      "ecdUm": 95.0,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        269.37185660781165,
+        157.28785446762976
+      ],
+      "imageSha256": "dc744fa0e9f108b50dbd20d6389b6b2f3637f0971371e8054de45054fea4582f",
+      "image": "sem/0029.png",
+      "minimumIoU": 0.7865893869139619,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 491,
+      "sequence": 64,
+      "particleId": "68a9569b-e328-4dc4-a9d0-729563923b57",
+      "ecdUm": 83.0,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        295.7141388174807,
+        159.11516709511568
+      ],
+      "imageSha256": "448d74546461dcc30c0767fc8c67914076faa364914cde66be16cee206549d73",
+      "image": "sem/0064.png",
+      "minimumIoU": 0.606549259826442,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 497,
+      "sequence": 17,
+      "particleId": "0cf25b24-648c-46c0-bc7c-b637658776d9",
+      "ecdUm": 90.7,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        310.7106759317751,
+        134.33670246367657
+      ],
+      "imageSha256": "d8ea34e56d0a574a562f1a7e08107468ce7e1b2e2bf6c01d9c50f570823243bc",
+      "image": "sem/0017.png",
+      "minimumIoU": 0.8114779499404052,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 498,
+      "sequence": 95,
+      "particleId": "52109b4e-1818-49c6-be02-0222eb9198ba",
+      "ecdUm": 80.6,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        309.00342759211657,
+        138.18080548414738
+      ],
+      "imageSha256": "8f22a177651b9d3ad3bab3fed166cb98f1070d42a2fc6748ac3db0ac4fa39fcb",
+      "image": "sem/0095.png",
+      "minimumIoU": 0.8773170731707317,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 499,
+      "sequence": 98,
+      "particleId": "a5ed1ad4-a937-4e92-8100-362fee3ac98e",
+      "ecdUm": 84.5,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        306.6479944674966,
+        135.95435684647302
+      ],
+      "imageSha256": "f8cebbae1aa3308e458e4e232913c5c8ab8fb752e50f31f3c482f9a4575feca4",
+      "image": "sem/0098.png",
+      "minimumIoU": 0.8518306010928961,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 505,
+      "sequence": 15,
+      "particleId": "b5f30583-0efe-431b-8080-1e7a3cf755c0",
+      "ecdUm": 99.6,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        252.64577777777777,
+        151.24666666666667
+      ],
+      "imageSha256": "dd910cf715bb4070e9577dbbc954e14a51bc191137bfec1004ed96c978e06f36",
+      "image": "sem/0015.png",
+      "minimumIoU": 0.7049961028838659,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 527,
+      "sequence": 73,
+      "particleId": "8e650796-11ca-4dd2-9b7c-5dcd45609488",
+      "ecdUm": 102.5,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        269.475442043222,
+        125.58693516699411
+      ],
+      "imageSha256": "ba6b6c977d23578d94f5abd63ce6beb5febbe21bbd89a05816466531023f7dc5",
+      "image": "sem/0073.png",
+      "minimumIoU": 0.8561362553596951,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 541,
+      "sequence": 24,
+      "particleId": "d78bc846-a65f-40f5-abc7-8dd5b3b6699e",
+      "ecdUm": 128.2,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        274.97289644012943,
+        158.34344660194176
+      ],
+      "imageSha256": "3c129bfa18e702ad3ce3876a77849483f30c31749022255f817bcb3401b52fdd",
+      "image": "sem/0024.png",
+      "minimumIoU": 0.5540202916930881,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 551,
+      "sequence": 27,
+      "particleId": "a0b8cbd0-a651-47ad-872a-d4e064047314",
+      "ecdUm": 135.3,
+      "accepted": false,
+      "status": "FAILED_MASK_IDENTITY",
+      "newCenterPx": [
+        245.30286738351253,
+        279.5
+      ],
+      "imageSha256": "4b5d4bba9c41e86dd7617a3f8a5d6cf180552487fce82a02d7f973197cd1ef52",
+      "image": "sem/0027.png",
+      "minimumIoU": null,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 557,
+      "sequence": 26,
+      "particleId": "6797e32e-91d8-4fc8-9670-83da0aa35150",
+      "ecdUm": 121.6,
+      "accepted": false,
+      "status": "FAILED_MASK_IDENTITY",
+      "newCenterPx": [
+        328.02710843373495,
+        261.6265060240964
+      ],
+      "imageSha256": "5847506251025fac30de36ba5abb4475890b6a895a2b3799871336e1e59ff1ca",
+      "image": "sem/0026.png",
+      "minimumIoU": null,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 566,
+      "sequence": 71,
+      "particleId": "56790e8a-3eae-49b7-bae8-b7cc43b12454",
+      "ecdUm": 94.1,
+      "accepted": false,
+      "status": "FAILED_MASK_IDENTITY",
+      "newCenterPx": [
+        295.07575757575756,
+        226.7348484848485
+      ],
+      "imageSha256": "76d7961f37d6eaab1cb7e6aa093096dcbb253fd0aa0f3b70ecbe19b10233fdbd",
+      "image": "sem/0071.png",
+      "minimumIoU": null,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 581,
+      "sequence": 77,
+      "particleId": "7ae2dcb8-e31a-4ec6-860d-fe1ed923bfc1",
+      "ecdUm": 87.1,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        274.4058265582656,
+        136.0420054200542
+      ],
+      "imageSha256": "e6b551ad1b175e57305060ed602662a8a737647b299eb33b1c74b1a212687cbd",
+      "image": "sem/0077.png",
+      "minimumIoU": 0.8291823491239455,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 589,
+      "sequence": 43,
+      "particleId": "a6b69c6b-776c-4154-80c8-4689e492d89e",
+      "ecdUm": 120.7,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        318.32057083188306,
+        137.7678384963453
+      ],
+      "imageSha256": "1df6032a68a26d795120c95d8387fdc25480c79202fda6200f19aa2cff1d5048",
+      "image": "sem/0043.png",
+      "minimumIoU": 0.8195161828495161,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 597,
+      "sequence": 117,
+      "particleId": "c7f114d2-1a5b-49ea-b915-9343ebaede32",
+      "ecdUm": 86.7,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        306.07859078590786,
+        131.95880758807587
+      ],
+      "imageSha256": "d80dc1e07f69f4a6331e4f1ec86babdaca6433b97e7c1056a9b931a9863b3440",
+      "image": "sem/0117.png",
+      "minimumIoU": 0.7080053908355795,
+      "knownWrongCenterPx": [
+        244.67783094098883,
+        267.87719298245617
+      ]
+    },
+    {
+      "rank": 631,
+      "sequence": 155,
+      "particleId": "2262ffe4-3b01-4cec-9656-3dd39c7f4e3b",
+      "ecdUm": 88.0,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        256.4008559201141,
+        76.73466476462197
+      ],
+      "imageSha256": "2c9f0e911ac68f70f957ef2f419a99a0d0a760e0af37820da84f8dc92e19d351",
+      "image": "sem/0155.png",
+      "minimumIoU": 0.7633942375263527,
+      "knownWrongCenterPx": [
+        309.4921465968586,
+        281.0314136125655
+      ]
+    },
+    {
+      "rank": 640,
+      "sequence": 128,
+      "particleId": "1aeb195a-ed83-4681-a390-d9c4abb0a190",
+      "ecdUm": 82.5,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        252.5218253968254,
+        173.14814814814815
+      ],
+      "imageSha256": "6cea4a00afb1d323dc7d9aa1157fb9c3f77c78344864faf1dfcebaa16480dd28",
+      "image": "sem/0128.png",
+      "minimumIoU": 0.7886596583442839,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 642,
+      "sequence": 37,
+      "particleId": "86aed1ea-c846-43fb-8c4f-6f810b1a61f8",
+      "ecdUm": 94.6,
+      "accepted": false,
+      "status": "FAILED_MASK_IDENTITY",
+      "newCenterPx": [
+        264.61971830985914,
+        303.88262910798124
+      ],
+      "imageSha256": "e2db1c9b78a03d87804a04062140c5d9c3de0c7dffacb9afb946a51a634b69fe",
+      "image": "sem/0037.png",
+      "minimumIoU": null,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 647,
+      "sequence": 40,
+      "particleId": "0a901bda-629f-4564-898a-c9dc6b792211",
+      "ecdUm": 90.8,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        241.8673926969891,
+        178.7091607943626
+      ],
+      "imageSha256": "7a1659aa2d6782d08d0222c8181a2c4fd53ecc9f32c77118d255f7a684be038a",
+      "image": "sem/0040.png",
+      "minimumIoU": 0.7192941840767928,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 664,
+      "sequence": 2,
+      "particleId": "556b1c73-d4e4-4417-811d-95a8ccc66721",
+      "ecdUm": 81.9,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        248.65073329712112,
+        164.50787615426398
+      ],
+      "imageSha256": "f401345688ccdaeb4c261eb6d24f9b6faa2f07223f86dbbd72a5bd99355d43bc",
+      "image": "sem/0002.png",
+      "minimumIoU": 0.59890625,
+      "knownWrongCenterPx": null,
+      "legacyExpected": {
+        "accepted": false,
+        "status": "FAILED_MASK_IDENTITY"
+      }
+    },
+    {
+      "rank": 673,
+      "sequence": 4,
+      "particleId": "205fb088-b159-4854-bb90-257c28f221ef",
+      "ecdUm": 114.5,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        271.46190476190475,
+        164.69010989010988
+      ],
+      "imageSha256": "450b631e2c08b6b01b2b363108906ec51917f9507d02a4fb531d59c4dd42bc79",
+      "image": "sem/0004.png",
+      "minimumIoU": 0.7926093138997511,
+      "knownWrongCenterPx": null,
+      "legacyExpected": {
+        "accepted": false,
+        "status": "FAILED_MASK_IDENTITY"
+      }
+    },
+    {
+      "rank": 702,
+      "sequence": 22,
+      "particleId": "c1330ed2-2dbf-40e9-b245-52d4ae266b19",
+      "ecdUm": 113.6,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        272.89684050247433,
+        170.63608679101637
+      ],
+      "imageSha256": "a21d39db8b41ba4e149d6227c6fe05621619b2751a0603ff7e9598afb85303e7",
+      "image": "sem/0022.png",
+      "minimumIoU": 0.7985714285714286,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 704,
+      "sequence": 50,
+      "particleId": "ee90b069-d889-4daf-9afa-f6d1cbe5052f",
+      "ecdUm": 99.3,
+      "accepted": false,
+      "status": "FAILED_MASK_IDENTITY",
+      "newCenterPx": [
+        270.5529197080292,
+        279.93978102189783
+      ],
+      "imageSha256": "1d0736a5dba6fbb23cd8259de3d800ae85a88f41f849865a108353bb08811b7d",
+      "image": "sem/0050.png",
+      "minimumIoU": null,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 706,
+      "sequence": 11,
+      "particleId": "8c11fb5f-6a49-40ab-9cfc-58027bfa5738",
+      "ecdUm": 95.2,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        321.3831548198637,
+        157.79113924050634
+      ],
+      "imageSha256": "6ad9aa82d56e3069788d67eaefd33f5f80b166e8ac5bafe68ea88a6347e64527",
+      "image": "sem/0011.png",
+      "minimumIoU": 0.6675788031064412,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 722,
+      "sequence": 10,
+      "particleId": "56bae673-4a04-4ef8-863f-e504e8c12fea",
+      "ecdUm": 124.3,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        326.6752421307506,
+        145.83141646489105
+      ],
+      "imageSha256": "72c66a1bf5684a09193be67e26db34f6a7d00ec2dcfcfa9501790d115625f6cb",
+      "image": "sem/0010.png",
+      "minimumIoU": 0.638659961946181,
+      "knownWrongCenterPx": [
+        251.27312252964427,
+        282.4098814229249
+      ]
+    },
+    {
+      "rank": 765,
+      "sequence": 36,
+      "particleId": "d96032da-3756-48c4-95c4-d806f8628588",
+      "ecdUm": 80.6,
+      "accepted": false,
+      "status": "FAILED_MASK_IDENTITY",
+      "newCenterPx": [
+        352.3599240265907,
+        394.0151946818613
+      ],
+      "imageSha256": "e6cc2fe8f552778795bf62cfb1062a904a5e9e7e5d3d14060933077964fa223d",
+      "image": "sem/0036.png",
+      "minimumIoU": null,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 784,
+      "sequence": 16,
+      "particleId": "dd404e86-a634-4548-ab91-abe6cf2769ec",
+      "ecdUm": 89.4,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        307.5644871025795,
+        175.2261547690462
+      ],
+      "imageSha256": "f4606ec827f4919fc1e69d97b34b1cef26b4369cbdb33888e592b4e28b5ae443",
+      "image": "sem/0016.png",
+      "minimumIoU": 0.6517204301075269,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 792,
+      "sequence": 49,
+      "particleId": "09122511-4513-4ea4-9e94-7f1a0a058e4d",
+      "ecdUm": 95.6,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        275.91478834524463,
+        187.196261682243
+      ],
+      "imageSha256": "c65edd3196fa30579434ccdd241438217d54adb408140fde6f5988407daed572",
+      "image": "sem/0049.png",
+      "minimumIoU": 0.7704115226337448,
+      "knownWrongCenterPx": null
+    },
+    {
+      "rank": 796,
+      "sequence": 115,
+      "particleId": "b987ccb4-a115-42ef-901b-385120138830",
+      "ecdUm": 82.7,
+      "accepted": true,
+      "status": "MATCHED_HIGH",
+      "newCenterPx": [
+        329.20427881297445,
+        192.20772946859904
+      ],
+      "imageSha256": "a75741f803ad06de07a837607629a685585ca55f39cfa0dca950214da90d0387",
+      "image": "sem/0115.png",
+      "minimumIoU": 0.7713333333333333,
+      "knownWrongCenterPx": null
+    }
+  ],
+  "baselineUpdates20260910": [
+    {
+      "rank": 1,
+      "sequence": 1,
+      "oldAccepted": false,
+      "newAccepted": true,
+      "centerUnchanged": true,
+      "maskIoU": 0.7958833619210978,
+      "score": 0.7372240424156189,
+      "margin": 0.11054259538650513,
+      "reason": "Fine angle search and footprint dedup recover the same independently segmented SEM contour; no thresholds relaxed."
+    },
+    {
+      "rank": 664,
+      "sequence": 2,
+      "oldAccepted": false,
+      "newAccepted": true,
+      "centerUnchanged": true,
+      "maskIoU": 0.62890625,
+      "score": 0.7172610759735107,
+      "margin": 0.273258239030838,
+      "reason": "Fine angle search and footprint dedup recover the same independently segmented SEM contour; no thresholds relaxed."
+    },
+    {
+      "rank": 673,
+      "sequence": 4,
+      "oldAccepted": false,
+      "newAccepted": true,
+      "centerUnchanged": true,
+      "maskIoU": 0.8226093138997511,
+      "score": 0.9158344268798828,
+      "margin": 0.20170658826828003,
+      "reason": "Fine angle search and footprint dedup recover the same independently segmented SEM contour; no thresholds relaxed."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "name": "zem_cleanliness",
+  "private": true,
+  "version": "0.1.9",
+  "description": "ZEPTOOLS 清洁度检测桌面软件",
+  "main": "electron/main.cjs",
+  "author": "ZEPTOOLS",
+  "type": "module",
+  "scripts": {
+    "setup:backend": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/setup-backend.ps1",
+    "dev": "node electron/dev.cjs",
+    "dev:web": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "build:backend": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-backend.ps1",
+    "dist": "pnpm build && pnpm build:backend && electron-builder --win nsis",
+    "dist:dir": "pnpm build && pnpm build:backend && electron-builder --win dir",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "test:backend": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/run-backend-python.ps1 -m pytest backend/tests -q",
+    "test:matching": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/run-backend-python.ps1 -m pytest backend/tests/test_mask_matching_regression.py backend/tests/test_template_identity_regression.py backend/tests/test_human_confirmed_matching_regression.py backend/tests/test_matching_expansion_regression.py backend/tests/test_real_matching_controls.py backend/tests/test_shape_comparison.py backend/tests/test_shape_consensus.py backend/tests/test_large_particle_center.py backend/tests/test_rerun_failures_regression.py backend/tests/test_cleanliness_detection.py backend/tests/test_particle_refinement.py backend/tests/test_ab_particle_calibration.py backend/tests/test_manual_ab_calibration.py backend/tests/test_route_optimizer.py backend/tests/test_cleanliness_task.py backend/tests/test_energy_spectrum.py -q",
+    "test:api": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/run-backend-python.ps1 backend/tests/api_smoke.py",
+    "test:electron": "node e2e/electron-smoke.cjs",
+    "test:mcp-ui": "node e2e/vibe-mcp-ui-smoke.cjs",
+    "test:packaged": "node e2e/packaged-smoke.cjs",
+    "test:offline": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/run-backend-python.ps1 scripts/offline-validation.py",
+    "test:offline-ui": "node e2e/formal-offline-smoke.cjs",
+    "test:calibration-ui": "node e2e/calibration-review-smoke.cjs",
+    "test:hardware-acceptance": "node e2e/hardware-acceptance.cjs",
+    "test:hardware-analysis-resume": "node e2e/hardware-analysis-resume.cjs",
+    "test:agent-control": "node e2e/agent-control-smoke.cjs",
+    "mcp": "node tools/mcp/server.cjs",
+    "mcp:smoke": "node tools/mcp/smoke.cjs"
+  },
+  "dependencies": {
+    "lucide-react": "^1.31.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.4",
+    "electron": "33.2.1",
+    "electron-builder": "25.1.8",
+    "oxlint": "^1.75.0",
+    "playwright": "^1.62.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "electron"
+    ]
+  },
+  "build": {
+    "appId": "com.zeptools.zem-cleanliness",
+    "productName": "ZEM Cleanliness",
+    "copyright": "Copyright © ZEPTOOLS",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "backend-dist/zem-cleanliness-backend.exe",
+        "to": "backend/zem-cleanliness-backend.exe"
+      },
+      {
+        "from": "resources",
+        "to": "resources"
+      },
+      {
+        "from": "build/icon.ico",
+        "to": "icon.ico"
+      }
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "ZEM Cleanliness",
+      "artifactName": "ZEM-Cleanliness-Setup-${version}.${ext}",
+      "deleteAppDataOnUninstall": false
+    }
+  }
+}

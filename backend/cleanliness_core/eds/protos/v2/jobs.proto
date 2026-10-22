@@ -1,0 +1,93 @@
+syntax = "proto3";
+
+package zeptools.eds.jobs.v2;
+
+option csharp_namespace = "ZepTools.EDS.Grpc.V2";
+
+import "v2/jobs_common.proto";
+import "v2/job_events.proto";
+
+service JobService {
+  rpc StartPointListMeasurementJob (StartPointListMeasurementJobRequest) returns (StartPointListMeasurementJobResponse);
+  rpc StartSpectrumAcquisitionJob (StartSpectrumAcquisitionJobRequest) returns (StartSpectrumAcquisitionJobResponse);
+  rpc CancelJob (CancelJobRequest) returns (CancelJobResponse);
+  rpc GetJob (GetJobRequest) returns (GetJobResponse);
+  rpc WatchJob (WatchJobRequest) returns (stream JobEvent);
+}
+
+message StartPointListMeasurementJobRequest {
+  string session_id = 1;
+  string mode = 2; // "precise" or "automatic"
+}
+
+message StartPointListMeasurementJobResponse {
+  bool success = 1;
+  string job_id = 2;
+  string message = 3;
+}
+
+enum SpectrumAcquisitionPreset {
+  SPECTRUM_ACQUISITION_PRESET_AUTOMATIC = 0;
+  reserved 1;
+  reserved "SPECTRUM_ACQUISITION_PRESET_FAST";
+  SPECTRUM_ACQUISITION_PRESET_PRECISE = 2;
+}
+
+message SpectrumImageOptions {
+  bool include_png = 1;
+  uint32 width = 2;
+  uint32 height = 3;
+}
+
+message StartSpectrumAcquisitionJobRequest {
+  string session_id = 1;
+
+  oneof stop_condition {
+    SpectrumAcquisitionPreset preset = 2;
+    double real_time_seconds = 3;
+    double live_time_seconds = 4;
+    uint64 target_counts = 5;
+  }
+
+  // Optional override for non-automatic modes. Automatic always uses 5..60 s and 100000 counts.
+  double max_duration_seconds = 6;
+  uint32 progress_interval_ms = 7;
+  // Empty: first method reported by the instrument.
+  string quant_method = 8;
+  SpectrumImageOptions image = 9;
+}
+
+message StartSpectrumAcquisitionJobResponse {
+  bool success = 1;
+  string job_id = 2;
+  string message = 3;
+}
+
+message CancelJobRequest {
+  string session_id = 1;
+  string job_id = 2;
+}
+
+message CancelJobResponse {
+  bool found = 1;
+  bool accepted = 2;
+  string message = 3;
+}
+
+message GetJobRequest {
+  string session_id = 1;
+  string job_id = 2;
+}
+
+message GetJobResponse {
+  bool found = 1;
+  JobState state = 2;
+  double progress = 3;
+  string message = 4;
+}
+
+message WatchJobRequest {
+  string session_id = 1;
+  string job_id = 2;
+  uint64 last_seq = 3;
+}

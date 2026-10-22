@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "caseId": "rerun-rank53-capture1",
+      "source": "rerun",
+      "rank": 53,
+      "sequence": 131,
+      "particleId": "d8a3a28e-231f-42e3-b3fd-f8ebbead5c44",
+      "attempt": 1,
+      "image": "rerun/sem/0131_1.png",
+      "imageSha256": "a317fae6cd46a79bae886eedbb6f4dcc440d8fe38d1275fbc7c3074a0721a93b",
+      "history": "rerun/history/0131.json",
+      "historySha256": "49619e5a4863c64c3925f27fa329276bcc574d9031c0af1620b97802c5bb9711",
+      "oldDecisionStatus": "FAILED_MASK_IDENTITY",
+      "oldReason": "掩码定位复核未通过：去除重叠匹配后仍有不同位置的相近候选，差距 0.029 小于 0.070；不能采谱",
+      "expectedMode": "matched_particle",
+      "expectedTargetCenterPx": [
+        285,
+        229
+      ],
+      "competitorCenterPx": [
+        468,
+        124
+      ],
+      "centerTolerancePx": 6
+    },
+    {
+      "caseId": "rerun-rank53-capture2",
+      "source": "rerun",
+      "rank": 53,
+      "sequence": 131,
+      "particleId": "d8a3a28e-231f-42e3-b3fd-f8ebbead5c44",
+      "attempt": 2,
+      "image": "rerun/sem/0131_2.png",
+      "imageSha256": "3baaef285eed1d13cec4b119a8a1939d2e1268a59ea30ab2f8abbe3b3c44ae6b",
+      "history": "rerun/history/0131.json",
+      "historySha256": "49619e5a4863c64c3925f27fa329276bcc574d9031c0af1620b97802c5bb9711",
+      "oldDecisionStatus": "FAILED_MASK_IDENTITY",
+      "oldReason": "掩码定位复核未通过：去除重叠匹配后仍有不同位置的相近候选，差距 0.022 小于 0.070；不能采谱",
+      "expectedMode": "matched_particle",
+      "expectedTargetCenterPx": [
+        285,
+        229
+      ],
+      "competitorCenterPx": [
+        468,
+        124
+      ],
+      "centerTolerancePx": 6
+    },
+    {
+      "caseId": "rerun-rank79-capture1",
+      "source": "rerun",
+      "rank": 79,
+      "sequence": 7,
+      "particleId": "85a060b1-5520-4d11-a343-8d6301cf67cd",
+      "attempt": 1,
+      "image": "rerun/sem/0007_1.png",
+      "imageSha256": "bdd37e6b90fecb3e25489d1c8e41886a5f6e1dc1e58b22d154b23b7503b4588d",
+      "history": "rerun/history/0007.json",
+      "historySha256": "80e3567da4430dc0f55f2034ae4f4a9b7160b0ca8d7d56f0769a0155318eae8f",
+      "oldDecisionStatus": "FAILED_MASK_IDENTITY",
+      "oldReason": "掩码定位复核未通过：颗粒模板无法完整放入视场；不能采谱",
+      "expectedMode": "large_particle_center_region"
+    },
+    {
+      "caseId": "rerun-rank79-capture2",
+      "source": "rerun",
+      "rank": 79,
+      "sequence": 7,
+      "particleId": "85a060b1-5520-4d11-a343-8d6301cf67cd",
+      "attempt": 2,
+      "image": "rerun/sem/0007_2.png",
+      "imageSha256": "3b608f3edf122ea7395800b498e7141e0c7baecfac9b8e04711b42f1e136b041",
+      "history": "rerun/history/0007.json",
+      "historySha256": "80e3567da4430dc0f55f2034ae4f4a9b7160b0ca8d7d56f0769a0155318eae8f",
+      "oldDecisionStatus": "FAILED_MASK_IDENTITY",
+      "oldReason": "掩码定位复核未通过：颗粒模板无法完整放入视场；不能采谱",
+      "expectedMode": "large_particle_center_region"
+    },
+    {
+      "caseId": "rerun-rank98-capture1",
+      "source": "rerun",
+      "rank": 98,
+      "sequence": 6,
+      "particleId": "f3715646-2a7f-490c-bbf4-0899d2266eac",
+      "attempt": 1,
+      "image": "rerun/sem/0006_1.png",
+      "imageSha256": "d8eae4304f4fd0d7b203687359762863809e8e67752382ebb1df7eeb62f9c0d2",
+      "history": "rerun/history/0006.json",
+      "historySha256": "5660dd930e07276c0a8ed6054bc4e1354fc877c46689d034380ecc05748bbe1d",
+      "oldDecisionStatus": "FAILED_CENTER_SAMPLING",
+      "oldReason": "中心区域缺少可靠颗粒信号，未执行中心采谱",
+      "expectedMode": "large_particle_center_region"
+    },
+    {
+      "caseId": "rerun-rank98-capture2",
+      "source": "rerun",
+      "rank": 98,
+      "sequence": 6,
+      "particleId": "f3715646-2a7f-490c-bbf4-0899d2266eac",
+      "attempt": 2,
+      "image": "rerun/sem/0006_2.png",
+      "imageSha256": "af60f392aa5afedd7ef614950aa7b91709bf49b5fdad664325c5d834b9c811f2",
+      "history": "rerun/history/0006.json",
+      "historySha256": "5660dd930e07276c0a8ed6054bc4e1354fc877c46689d034380ecc05748bbe1d",
+      "oldDecisionStatus": "FAILED_CENTER_SAMPLING",
+      "oldReason": "中心区域缺少可靠颗粒信号，未执行中心采谱",
+      "expectedMode": "large_particle_center_region"
+    },
+    {
+      "caseId": "previous-rank56-capture1",
+      "source": "previous",
+      "rank": 56,
+      "sequence": 131,
+      "particleId": "d8a3a28e-231f-42e3-b3fd-f8ebbead5c44",
+      "attempt": 1,
+      "image": "previous/sem/0131_1.png",
+      "imageSha256": "57bb8141b69fa678c1aa7d3357f3ab21cbbd7feb3e3003d93a4076c17c2306d1",
+      "history": "previous/history/0131.json",
+      "historySha256": "f7a1329468a7024faf45ce7046f91ea959649c57d4a22d874d2232f320f63a36",
+      "oldDecisionStatus": "MATCHED_HIGH",
+      "oldReason": "掩码定位后从 SEM 像素分割；检测=-0.539，形貌差=0.268；光镜轮廓来源=customer_mask；模板与 SEM 轮廓 IoU=0.720",
+      "expectedMode": "matched_particle",
+      "expectedTargetCenterPx": [
+        324,
+        210
+      ],
+      "competitorCenterPx": [
+        506,
+        105
+      ],
+      "centerTolerancePx": 6
+    }
+  ],
+  "sources": [
+    {
+      "id": "rerun",
+      "taskId": "5b992f20-1aa7-4b3f-93dc-25d2b72060dd",
+      "taskSha256": "ea17167ca07a7dcd3be9e893b79bfe98fa4b4f7e3baf006dee05a057bf8d6c7b",
+      "inputSha256": "cbcaefa09a6208dc0b5f8f4ab2375932ccf665fab079c8c01aad5591a51bd136",
+      "optical": "rerun/optical.json",
+      "opticalSha256": "190b20a5c8dc69d4d629b98cd479ab0d8753cb628a0c7c4e89a8e475728b36d6",
+      "settingsSha256": "0539d5aff255e3c722b1bbce4032080c9fcc27e0743f1d28fc84186ec3e74a87",
+      "pixelSizeUm": 2.0670572916666665,
+      "fieldWidthUm": 1058.3333333333333
+    },
+    {
+      "id": "previous",
+      "taskId": "82599546-2f1d-40a8-b986-7fca42d99133",
+      "taskSha256": "0699d7269201df8cdef42c62dcf5a91c19b9bb83be53f9d429f8b43f92144e02",
+      "inputSha256": "cbcaefa09a6208dc0b5f8f4ab2375932ccf665fab079c8c01aad5591a51bd136",
+      "optical": "previous/optical.json",
+      "opticalSha256": "5d37cfd96d111dcf2d1d05301ef0ab1db300b2e8dbef8f292c7ea25c06eea71f",
+      "settingsSha256": "e4a77014c057c0e2ba8ad8e8483dfa166164610b0f1f1164a4a930444df86632",
+      "pixelSizeUm": 2.0670572916666665,
+      "fieldWidthUm": 1058.3333333333333
+    }
+  ],
+  "userFeedback": "本次53号之前成功、这次失败属于退化；79、98号应走大颗粒中心采谱。",
+  "labelMeaning": "User-approved behavior repair; target centers localized from saved SEM evidence, not newly drawn human masks. Historical success alone is not identity truth.",
+  "expectedBehavior": {
+    "53": "match original central target, reject competing target",
+    "79": "large center sampling",
+    "98": "large center sampling with local point clearance"
+  },
+  "model": "resources/models/cleanliness/particle_yolo11n_seg_reann_20260811_best.onnx",
+  "modelSha256": "258c1cd69f2ca79e1f0d489596d64d4dca3c2fd042d981849139d6f20cdc91b6"
+}

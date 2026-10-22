@@ -1,0 +1,469 @@
+{
+  "schemaVersion": 1,
+  "referenceCommit": "7cb754459a86632547e98d5c7ce34da6b8106705",
+  "referenceCodeSha256": {
+    "cleanliness_task.py": "086a46e09e76fc7ecdbd0b7993d9c3fb2a81d8877a1c6e7f609b62c8b4b94e3a",
+    "cleanliness_detection.py": "539f939e62426ca1ac8101f573cf01c13dd53c54c0b601452ab0270b9c99e9c7",
+    "optical_particle_analysis.py": "285a989c0e42943c827c031e5e930a2f04fcc0edb854b813a5e44e4e58985c8d"
+  },
+  "importedHistoricalManifestSha256": "845811b61a423db8eb1267534756cd6f3406fedf598e0ae6b3821662758737cc",
+  "modelSha256": "258c1cd69f2ca79e1f0d489596d64d4dca3c2fd042d981849139d6f20cdc91b6",
+  "labelMeaning": "Versioned compatibility only. Neither old nor committed selection establishes human identity truth.",
+  "reason": "These no-mask frames predate the current workflow. Six disagreements already reproduce with immutable committed HEAD, before the local shape-consensus changes. Candidate-generation and optical-decoding sources equal that committed version. Freeze its behavior separately; retain every imported historical result.",
+  "identityReviewStatus": "unconfirmed; historical and current coordinates are not human target labels",
+  "cases": [
+    {
+      "caseId": "legacy_without_mask-rank214-seq292-capture1",
+      "rank": 214,
+      "sequence": 292,
+      "historicalExpected": {
+        "accepted": true,
+        "status": "MATCHED_HIGH",
+        "centerPx": [
+          262.5,
+          309.71759259259255
+        ]
+      },
+      "committedExpected": {
+        "accepted": true,
+        "status": "MATCHED_HIGH",
+        "centerPx": [
+          243.47916666666666,
+          238.89583333333334
+        ],
+        "centerTolerancePx": 3.0
+      },
+      "committedDecision": {
+        "status": "MATCHED_HIGH",
+        "confidence": "high",
+        "reason": "离线/在线统一候选；检测=1.475，形貌差=0.750；光镜轮廓来源=unavailable",
+        "best": {
+          "boxPx": [
+            239,
+            232,
+            250,
+            249
+          ],
+          "centerPx": [
+            243.47916666666666,
+            238.89583333333334
+          ],
+          "distancePx": 21.197258896428618,
+          "lengthRatio": 0.5565154246794871,
+          "widthRatio": 2.454495157007182,
+          "areaRatio": 5.634363754328353,
+          "contrastZ": -0.5845586582130492,
+          "signalZ": 2.4184863913031243,
+          "channel": "dark",
+          "score": 1.4750134005951783,
+          "thresholdZ": 1.6,
+          "closeKernelPx": 3
+        },
+        "secondScore": null,
+        "scoreMargin": null,
+        "candidateCount": 6
+      },
+      "workingTreeReproducesCommitted": true,
+      "differenceAlreadyPresentInCommittedCode": true,
+      "historicalToCommittedDistancePx": 73.33153268049777,
+      "nearestYoloToHistoricalCenterPx": 0.0
+    },
+    {
+      "caseId": "legacy_without_mask-rank322-seq1-capture1",
+      "rank": 322,
+      "sequence": 1,
+      "historicalExpected": {
+        "accepted": true,
+        "status": "MATCHED_HIGH",
+        "centerPx": [
+          238.2639350313769,
+          272.56786021902303
+        ]
+      },
+      "committedExpected": {
+        "accepted": true,
+        "status": "MATCHED_HIGH",
+        "centerPx": [
+          238.2639350313769,
+          272.56786021902303
+        ],
+        "centerTolerancePx": 3.0
+      },
+      "committedDecision": {
+        "status": "MATCHED_HIGH",
+        "confidence": "high",
+        "reason": "离线/在线统一候选；检测=-0.276，形貌差=2.266；光镜轮廓来源=image_inferred",
+        "best": {
+          "boxPx": [
+            69,
+            189,
+            403,
+            339
+          ],
+          "centerPx": [
+            238.2639350313769,
+            272.56786021902303
+          ],
+          "distancePx": 24.27059935000176,
+          "lengthRatio": 1.0090407602680191,
+          "widthRatio": 1.0354317857046875,
+          "areaRatio": 1.1205879416294782,
+          "contrastZ": 9.506038149760975,
+          "signalZ": 18.541586187259696,
+          "channel": "bright",
+          "score": -0.27601077457498324,
+          "thresholdZ": 6.0,
+          "closeKernelPx": 3
+        },
+        "secondScore": null,
+        "scoreMargin": null,
+        "candidateCount": 6
+      },
+      "workingTreeReproducesCommitted": true,
+      "differenceAlreadyPresentInCommittedCode": false,
+      "historicalToCommittedDistancePx": 0.0,
+      "nearestYoloToHistoricalCenterPx": 244.7545221198967
+    },
+    {
+      "caseId": "legacy_without_mask-rank1-seq5-capture1",
+      "rank": 1,
+      "sequence": 5,
+      "historicalExpected": {
+        "accepted": true,
+        "status": "MATCHED_HIGH",
+        "centerPx": [
+          298.9083932853717,
+          231.4484412470024
+        ]
+      },
+      "committedExpected": {
+        "accepted": true,
+        "status": "MATCHED_HIGH",
+        "centerPx": [
+          300.9846038302666,
+          238.3837776943297
+        ],
+        "centerTolerancePx": 3.0
+      },
+      "committedDecision": {
+        "status": "MATCHED_HIGH",
+        "confidence": "high",
+        "reason": "离线/在线统一候选；检测=0.774，形貌差=1.268；光镜轮廓来源=image_inferred",
+        "best": {
+          "boxPx": [
+            248,
+            208,
+            352,
+            280
+          ],
+          "centerPx": [
+            300.9846038302666,
+            238.3837776943297
+          ],
+          "distancePx": 48.3109290956905,
+          "lengthRatio": 0.6324528932698034,
+          "widthRatio": 0.8372948358123711,
+          "areaRatio": 0.6407512758210301,
+          "contrastZ": 5.780239749255929,
+          "signalZ": 11.457097217286343,
+          "channel": "bright",
+          "score": 0.7738160577460376,
+          "thresholdZ": 4.2,
+          "closeKernelPx": 21
+        },
+        "secondScore": null,
+        "scoreMargin": null,
+        "candidateCount": 6
+      },
+      "workingTreeReproducesCommitted": true,
+      "differenceAlreadyPresentInCommittedCode": true,
+      "historicalToCommittedDistancePx": 7.239443477530535,
+      "nearestYoloToHistoricalCenterPx": 0.0
+    },
+    {
+      "caseId": "legacy_without_mask-rank2-seq328-capture1",
+      "rank": 2,
+      "sequence": 328,
+      "historicalExpected": {
+        "accepted": true,
+        "status": "MATCHED_HIGH",
+        "centerPx": [
+          356.05498281786936,
+          216.46391752577318
+        ]
+      },
+      "committedExpected": {
+        "accepted": true,
+        "status": "MATCHED_HIGH",
+        "centerPx": [
+          242.97014925373134,
+          269.1940298507463
+        ],
+        "centerTolerancePx": 3.0
+      },
+      "committedDecision": {
+        "status": "MATCHED_HIGH",
+        "confidence": "high",
+        "reason": "离线/在线统一候选；检测=1.119，形貌差=0.750；光镜轮廓来源=unavailable",
+        "best": {
+          "boxPx": [
+            236,
+            261,
+            249,
+            277
+          ],
+          "centerPx": [
+            242.97014925373134,
+            269.1940298507463
+          ],
+          "distancePx": 18.54344720305322,
+          "lengthRatio": 0.5395932689089692,
+          "widthRatio": 1.3544966822560383,
+          "areaRatio": 1.1972924790931259,
+          "contrastZ": -0.3546690790359135,
+          "signalZ": 2.2161503154893425,
+          "channel": "dark",
+          "score": 1.119181842075327,
+          "thresholdZ": 1.6,
+          "closeKernelPx": 3
+        },
+        "secondScore": null,
+        "scoreMargin": null,
+        "candidateCount": 6
+      },
+      "workingTreeReproducesCommitted": true,
+      "differenceAlreadyPresentInCommittedCode": true,
+      "historicalToCommittedDistancePx": 124.77437368319296,
+      "nearestYoloToHistoricalCenterPx": 0.0
+    },
+    {
+      "caseId": "legacy_without_mask-rank60-seq250-capture1",
+      "rank": 60,
+      "sequence": 250,
+      "historicalExpected": {
+        "accepted": false,
+        "status": "FAILED_LOW_CONFIDENCE",
+        "centerPx": [
+          218.34403292181068,
+          244.56049382716049
+        ]
+      },
+      "committedExpected": {
+        "accepted": true,
+        "status": "MATCHED_HIGH",
+        "centerPx": [
+          289.54658385093165,
+          248.0
+        ],
+        "centerTolerancePx": 3.0
+      },
+      "committedDecision": {
+        "status": "MATCHED_HIGH",
+        "confidence": "high",
+        "reason": "离线/在线统一候选；检测=1.386，形貌差=0.727；光镜轮廓来源=image_inferred",
+        "best": {
+          "boxPx": [
+            281,
+            232,
+            296,
+            262
+          ],
+          "centerPx": [
+            289.54658385093165,
+            248.0
+          ],
+          "distancePx": 34.48729168936854,
+          "lengthRatio": 0.6636212470273485,
+          "widthRatio": 1.4323857542883631,
+          "areaRatio": 0.8536967750958127,
+          "contrastZ": -0.3305423659795241,
+          "signalZ": 2.3705294760409577,
+          "channel": "dark",
+          "score": 1.3863066839371085,
+          "thresholdZ": 1.6,
+          "closeKernelPx": 3
+        },
+        "secondScore": null,
+        "scoreMargin": null,
+        "candidateCount": 6
+      },
+      "workingTreeReproducesCommitted": true,
+      "differenceAlreadyPresentInCommittedCode": true,
+      "historicalToCommittedDistancePx": 71.28557681275412,
+      "nearestYoloToHistoricalCenterPx": 0.0
+    },
+    {
+      "caseId": "legacy_without_mask-rank69-seq170-capture1",
+      "rank": 69,
+      "sequence": 170,
+      "historicalExpected": {
+        "accepted": false,
+        "status": "FAILED_LOW_CONFIDENCE",
+        "centerPx": [
+          217.32209737827714,
+          262.97940074906364
+        ]
+      },
+      "committedExpected": {
+        "accepted": true,
+        "status": "MATCHED_HIGH",
+        "centerPx": [
+          242.42410714285714,
+          273.10267857142856
+        ],
+        "centerTolerancePx": 3.0
+      },
+      "committedDecision": {
+        "status": "MATCHED_HIGH",
+        "confidence": "high",
+        "reason": "离线/在线统一候选；检测=1.111，形貌差=1.699；光镜轮廓来源=image_inferred",
+        "best": {
+          "boxPx": [
+            233,
+            257,
+            254,
+            292
+          ],
+          "centerPx": [
+            242.42410714285714,
+            273.10267857142856
+          ],
+          "distancePx": 21.835898909507343,
+          "lengthRatio": 0.6568603111552466,
+          "widthRatio": 1.8004598033424184,
+          "areaRatio": 3.0182610839963506,
+          "contrastZ": -0.3984714754645957,
+          "signalZ": 2.3344779669470066,
+          "channel": "dark",
+          "score": 1.111361931865286,
+          "thresholdZ": 1.6,
+          "closeKernelPx": 3
+        },
+        "secondScore": null,
+        "scoreMargin": null,
+        "candidateCount": 6
+      },
+      "workingTreeReproducesCommitted": true,
+      "differenceAlreadyPresentInCommittedCode": true,
+      "historicalToCommittedDistancePx": 27.066430279773783,
+      "nearestYoloToHistoricalCenterPx": 0.0
+    },
+    {
+      "caseId": "legacy_without_mask-rank229-seq8-capture1",
+      "rank": 229,
+      "sequence": 8,
+      "historicalExpected": {
+        "accepted": false,
+        "status": "FAILED_LOW_CONFIDENCE",
+        "centerPx": [
+          202.05803255484784,
+          223.14720452937013
+        ]
+      },
+      "committedExpected": {
+        "accepted": true,
+        "status": "MATCHED_HIGH",
+        "centerPx": [
+          195.64100486223663,
+          235.6329011345219
+        ],
+        "centerTolerancePx": 3.0
+      },
+      "committedDecision": {
+        "status": "MATCHED_HIGH",
+        "confidence": "high",
+        "reason": "离线/在线统一候选；检测=1.596，形貌差=1.954；光镜轮廓来源=image_inferred",
+        "best": {
+          "boxPx": [
+            167,
+            202,
+            222,
+            278
+          ],
+          "centerPx": [
+            195.64100486223663,
+            235.6329011345219
+          ],
+          "distancePx": 63.7026452373581,
+          "lengthRatio": 0.4408563163362371,
+          "widthRatio": 0.6090974883289912,
+          "areaRatio": 0.8983717320221334,
+          "contrastZ": 2.3317939931040885,
+          "signalZ": 4.177852690330092,
+          "channel": "bright",
+          "score": 1.5963142485951716,
+          "thresholdZ": 2.2,
+          "closeKernelPx": 13
+        },
+        "secondScore": null,
+        "scoreMargin": null,
+        "candidateCount": 6
+      },
+      "workingTreeReproducesCommitted": true,
+      "differenceAlreadyPresentInCommittedCode": true,
+      "historicalToCommittedDistancePx": 14.038193050518908,
+      "nearestYoloToHistoricalCenterPx": 0.0
+    },
+    {
+      "caseId": "legacy_without_mask-rank320-seq47-capture1",
+      "rank": 320,
+      "sequence": 47,
+      "historicalExpected": {
+        "accepted": false,
+        "status": "FAILED_LOW_CONFIDENCE",
+        "centerPx": [
+          363.60849056603774,
+          277.8891509433962
+        ]
+      },
+      "committedExpected": {
+        "accepted": false,
+        "status": "FAILED_LOW_CONFIDENCE",
+        "centerPx": [
+          363.60849056603774,
+          277.8891509433962
+        ],
+        "centerTolerancePx": 3.0
+      },
+      "committedDecision": {
+        "status": "FAILED_LOW_CONFIDENCE",
+        "confidence": "low",
+        "reason": "离线/在线统一候选；候选不可信（形貌差 2.849 超过 2.5）；光镜轮廓来源=image_inferred",
+        "best": {
+          "boxPx": [
+            329,
+            247,
+            397,
+            311
+          ],
+          "centerPx": [
+            363.60849056603774,
+            277.8891509433962
+          ],
+          "distancePx": 109.81221321384892,
+          "lengthRatio": 0.913585237655643,
+          "widthRatio": 0.5418516962373999,
+          "areaRatio": 0.21357332851655877,
+          "contrastZ": 1.5509348393445432,
+          "signalZ": 2.1060161891593148,
+          "channel": "bright",
+          "score": 2.7500421051592037,
+          "thresholdZ": 2.2,
+          "closeKernelPx": 11
+        },
+        "secondScore": null,
+        "scoreMargin": null,
+        "candidateCount": 6
+      },
+      "workingTreeReproducesCommitted": true,
+      "differenceAlreadyPresentInCommittedCode": false,
+      "historicalToCommittedDistancePx": 0.0,
+      "nearestYoloToHistoricalCenterPx": 20.413775387672153
+    }
+  ],
+  "summary": {
+    "reviewed": 8,
+    "historicalDifferences": 6,
+    "committedAccepted": 7
+  }
+}

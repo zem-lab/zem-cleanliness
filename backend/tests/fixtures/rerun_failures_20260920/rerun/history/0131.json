@@ -1,0 +1,229 @@
+{
+  "rank": 53,
+  "sequence": 131,
+  "particleId": "d8a3a28e-231f-42e3-b3fd-f8ebbead5c44",
+  "label": "metal",
+  "status": "FAILED",
+  "lengthUm": 74.5,
+  "widthUm": 59.5,
+  "areaUm2": 2379.4,
+  "equivalentDiameterUm": 59.5,
+  "opticalAbPositionUm": {
+    "x": 23234.838835410264,
+    "y": -15482.055211632869
+  },
+  "targetStageUm": {
+    "x": -13806.59752744015,
+    "y": 8075.640579142815
+  },
+  "images": {
+    "opticalImage": "optical/0131.png"
+  },
+  "captureAttempts": [
+    {
+      "attempt": 1,
+      "status": "FAILED_MASK_IDENTITY",
+      "rawPath": "sem/0131_attempt1.png",
+      "displayPath": "sem/0131_attempt1.u8.png",
+      "match": {
+        "status": "FAILED_MASK_IDENTITY",
+        "confidence": "low",
+        "reason": "掩码定位复核未通过：去除重叠匹配后仍有不同位置的相近候选，差距 0.029 小于 0.070；不能采谱",
+        "best": {
+          "boxPx": [
+            264,
+            209,
+            304,
+            247
+          ],
+          "centerPx": [
+            285.15977653631285,
+            228.75083798882682
+          ],
+          "distancePx": 39.91001626106991,
+          "lengthRatio": 1.0265922119686801,
+          "widthRatio": 1.1593931007618996,
+          "areaRatio": 1.6071655178170712,
+          "contrastZ": 16.148778342742293,
+          "signalZ": 29.680231518585654,
+          "channel": "bright",
+          "score": 0.6888270331325504,
+          "thresholdZ": 3.0,
+          "closeKernelPx": 3
+        },
+        "secondScore": null,
+        "scoreMargin": null,
+        "candidateCount": 6
+      },
+      "maskVerification": {
+        "score": 0.9041114449501038,
+        "centerPixel": [
+          284.0,
+          229.0
+        ],
+        "angleDeg": 13.0,
+        "mirrored": false,
+        "scaleFactor": 1.1,
+        "maskSource": "customer_mask",
+        "status": "AMBIGUOUS",
+        "runnerUpScore": 0.8754778504371643,
+        "margin": 0.028633594512939453,
+        "runnerUp": {
+          "score": 0.8754778504371643,
+          "centerPixel": [
+            468.0,
+            124.0
+          ],
+          "angleDeg": 68.0,
+          "mirrored": true,
+          "scaleFactor": 0.9,
+          "maskSource": "customer_mask"
+        },
+        "hypothesisCount": 4143,
+        "runnerUpOverlapIoU": 0.0,
+        "distinctHypothesisCount": 2,
+        "overlapSuppressedCount": 4141,
+        "searchTruncated": false,
+        "coarseAngleStepDeg": 5,
+        "fineAngleStepDeg": 1,
+        "reason": "去除重叠匹配后仍有不同位置的相近候选，差距 0.029 小于 0.070",
+        "accepted": false,
+        "minimumMaskIoU": 0.5,
+        "initialCandidateCenterPx": [
+          285.15977653631285,
+          228.75083798882682
+        ],
+        "shapeConsensus": {
+          "status": "UNVERIFIED",
+          "corroborated": false,
+          "allowsEds": false,
+          "reason": "两种分割对竞争颗粒的轮廓不一致",
+          "detectorAgreementIoU": 0.7170868347338936,
+          "targets": []
+        }
+      },
+      "centerSampling": null
+    },
+    {
+      "attempt": 2,
+      "status": "FAILED_MASK_IDENTITY",
+      "rawPath": "sem/0131_attempt2.png",
+      "displayPath": "sem/0131_attempt2.u8.png",
+      "match": {
+        "status": "FAILED_MASK_IDENTITY",
+        "confidence": "low",
+        "reason": "掩码定位复核未通过：去除重叠匹配后仍有不同位置的相近候选，差距 0.022 小于 0.070；不能采谱",
+        "best": {
+          "boxPx": [
+            267,
+            209,
+            303,
+            246
+          ],
+          "centerPx": [
+            285.52284263959393,
+            228.67005076142132
+          ],
+          "distancePx": 40.23088816948382,
+          "lengthRatio": 0.9433550055928411,
+          "widthRatio": 1.1215453440485215,
+          "areaRatio": 1.415023941943969,
+          "contrastZ": 17.69083123967293,
+          "signalZ": 33.04362916492595,
+          "channel": "bright",
+          "score": 0.7015651353156392,
+          "thresholdZ": 6.0,
+          "closeKernelPx": 3
+        },
+        "secondScore": null,
+        "scoreMargin": null,
+        "candidateCount": 6
+      },
+      "maskVerification": {
+        "score": 0.9024066925048828,
+        "centerPixel": [
+          283.5,
+          228.5
+        ],
+        "angleDeg": 11.0,
+        "mirrored": false,
+        "scaleFactor": 1.0,
+        "maskSource": "customer_mask",
+        "status": "AMBIGUOUS",
+        "runnerUpScore": 0.8801701068878174,
+        "margin": 0.02223658561706543,
+        "runnerUp": {
+          "score": 0.8801701068878174,
+          "centerPixel": [
+            468.0,
+            124.0
+          ],
+          "angleDeg": 72.0,
+          "mirrored": true,
+          "scaleFactor": 0.9,
+          "maskSource": "customer_mask"
+        },
+        "hypothesisCount": 4195,
+        "runnerUpOverlapIoU": 0.0,
+        "distinctHypothesisCount": 2,
+        "overlapSuppressedCount": 4193,
+        "searchTruncated": false,
+        "coarseAngleStepDeg": 5,
+        "fineAngleStepDeg": 1,
+        "reason": "去除重叠匹配后仍有不同位置的相近候选，差距 0.022 小于 0.070",
+        "accepted": false,
+        "minimumMaskIoU": 0.5,
+        "initialCandidateCenterPx": [
+          285.52284263959393,
+          228.67005076142132
+        ],
+        "shapeConsensus": {
+          "status": "UNVERIFIED",
+          "corroborated": false,
+          "allowsEds": false,
+          "reason": "两种分割对竞争颗粒的轮廓不一致",
+          "detectorAgreementIoU": 0.7086834733893558,
+          "targets": []
+        }
+      },
+      "centerSampling": null
+    }
+  ],
+  "energySpectrum": null,
+  "error": "连续 2 次采图/匹配失败：掩码定位复核未通过：去除重叠匹配后仍有不同位置的相近候选，差距 0.022 小于 0.070；不能采谱",
+  "actualStageUm": {
+    "x": -13806.5,
+    "y": 8075.25
+  },
+  "stagePositionErrorUm": 0.4025713208667172,
+  "match": {
+    "status": "FAILED_MASK_IDENTITY",
+    "confidence": "low",
+    "reason": "掩码定位复核未通过：去除重叠匹配后仍有不同位置的相近候选，差距 0.029 小于 0.070；不能采谱",
+    "best": {
+      "boxPx": [
+        264,
+        209,
+        304,
+        247
+      ],
+      "centerPx": [
+        285.15977653631285,
+        228.75083798882682
+      ],
+      "distancePx": 39.91001626106991,
+      "lengthRatio": 1.0265922119686801,
+      "widthRatio": 1.1593931007618996,
+      "areaRatio": 1.6071655178170712,
+      "contrastZ": 16.148778342742293,
+      "signalZ": 29.680231518585654,
+      "channel": "bright",
+      "score": 0.6888270331325504,
+      "thresholdZ": 3.0,
+      "closeKernelPx": 3
+    },
+    "secondScore": null,
+    "scoreMargin": null,
+    "candidateCount": 6
+  }
+}

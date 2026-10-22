@@ -1,0 +1,211 @@
+{
+  "rank": 48,
+  "sequence": 53,
+  "particleId": "0ff3b8c9-af5f-404a-8648-f76a242483e7",
+  "label": "metal",
+  "status": "FAILED",
+  "lengthUm": 108.5,
+  "widthUm": 95.8,
+  "areaUm2": 7027.1,
+  "equivalentDiameterUm": 95.8,
+  "opticalAbPositionUm": {
+    "x": 35427.75039864832,
+    "y": -10011.898993151666
+  },
+  "targetStageUm": {
+    "x": -1310.735058332386,
+    "y": 12719.391845064427
+  },
+  "images": {
+    "opticalImage": "optical/0053.png"
+  },
+  "captureAttempts": [
+    {
+      "attempt": 1,
+      "status": "FAILED_MASK_IDENTITY",
+      "rawPath": "sem/0053_attempt1.png",
+      "displayPath": "sem/0053_attempt1.u8.png",
+      "match": {
+        "status": "FAILED_MASK_IDENTITY",
+        "confidence": "low",
+        "reason": "掩码定位复核未通过：去除重叠匹配后仍有不同位置的相近候选，差距 0.063 小于 0.070；不能采谱",
+        "best": {
+          "boxPx": [
+            247,
+            217,
+            302,
+            275
+          ],
+          "centerPx": [
+            273.03265107212474,
+            244.00779727095517
+          ],
+          "distancePx": 20.830845610278576,
+          "lengthRatio": 1.0478170602918586,
+          "widthRatio": 1.0698749136151169,
+          "areaRatio": 1.247688724809715,
+          "contrastZ": 19.82828622284912,
+          "signalZ": 37.43735939130061,
+          "channel": "bright",
+          "score": -0.03493934786278019,
+          "thresholdZ": 6.0,
+          "closeKernelPx": 3
+        },
+        "secondScore": null,
+        "scoreMargin": null,
+        "candidateCount": 6
+      },
+      "maskVerification": {
+        "score": 0.9061652421951294,
+        "centerPixel": [
+          276.5,
+          244.5
+        ],
+        "angleDeg": 13.0,
+        "mirrored": false,
+        "scaleFactor": 1.0,
+        "maskSource": "customer_mask",
+        "status": "AMBIGUOUS",
+        "runnerUpScore": 0.8428098559379578,
+        "margin": 0.06335538625717163,
+        "runnerUp": {
+          "score": 0.8428098559379578,
+          "centerPixel": [
+            465.0,
+            280.0
+          ],
+          "angleDeg": -1.0,
+          "mirrored": true,
+          "scaleFactor": 0.9,
+          "maskSource": "customer_mask"
+        },
+        "hypothesisCount": 4220,
+        "runnerUpOverlapIoU": 0.0,
+        "distinctHypothesisCount": 2,
+        "overlapSuppressedCount": 4218,
+        "searchTruncated": false,
+        "coarseAngleStepDeg": 5,
+        "fineAngleStepDeg": 1,
+        "reason": "去除重叠匹配后仍有不同位置的相近候选，差距 0.063 小于 0.070",
+        "accepted": false,
+        "minimumMaskIoU": 0.5,
+        "initialCandidateCenterPx": [
+          273.03265107212474,
+          244.00779727095517
+        ]
+      }
+    },
+    {
+      "attempt": 2,
+      "status": "FAILED_MASK_IDENTITY",
+      "rawPath": "sem/0053_attempt2.png",
+      "displayPath": "sem/0053_attempt2.u8.png",
+      "match": {
+        "status": "FAILED_MASK_IDENTITY",
+        "confidence": "low",
+        "reason": "掩码定位复核未通过：去除重叠匹配后仍有不同位置的相近候选，差距 0.065 小于 0.070；不能采谱",
+        "best": {
+          "boxPx": [
+            247,
+            217,
+            302,
+            275
+          ],
+          "centerPx": [
+            272.8709046454768,
+            244.17750611246944
+          ],
+          "distancePx": 20.6009413687207,
+          "lengthRatio": 1.0478170602918586,
+          "widthRatio": 1.0652102182619922,
+          "areaRatio": 1.2434324767231324,
+          "contrastZ": 20.03270538078714,
+          "signalZ": 37.707001271375354,
+          "channel": "bright",
+          "score": -0.04287553733410654,
+          "thresholdZ": 6.0,
+          "closeKernelPx": 3
+        },
+        "secondScore": null,
+        "scoreMargin": null,
+        "candidateCount": 6
+      },
+      "maskVerification": {
+        "score": 0.9048498272895813,
+        "centerPixel": [
+          276.5,
+          245.5
+        ],
+        "angleDeg": 11.0,
+        "mirrored": false,
+        "scaleFactor": 1.0,
+        "maskSource": "customer_mask",
+        "status": "AMBIGUOUS",
+        "runnerUpScore": 0.8398729562759399,
+        "margin": 0.06497687101364136,
+        "runnerUp": {
+          "score": 0.8398729562759399,
+          "centerPixel": [
+            465.0,
+            280.0
+          ],
+          "angleDeg": -1.0,
+          "mirrored": true,
+          "scaleFactor": 0.9,
+          "maskSource": "customer_mask"
+        },
+        "hypothesisCount": 4227,
+        "runnerUpOverlapIoU": 0.0,
+        "distinctHypothesisCount": 2,
+        "overlapSuppressedCount": 4225,
+        "searchTruncated": false,
+        "coarseAngleStepDeg": 5,
+        "fineAngleStepDeg": 1,
+        "reason": "去除重叠匹配后仍有不同位置的相近候选，差距 0.065 小于 0.070",
+        "accepted": false,
+        "minimumMaskIoU": 0.5,
+        "initialCandidateCenterPx": [
+          272.8709046454768,
+          244.17750611246944
+        ]
+      }
+    }
+  ],
+  "energySpectrum": null,
+  "error": "连续 2 次采图/匹配失败：掩码定位复核未通过：去除重叠匹配后仍有不同位置的相近候选，差距 0.065 小于 0.070；不能采谱",
+  "actualStageUm": {
+    "x": -1310.0,
+    "y": 12719.0
+  },
+  "stagePositionErrorUm": 0.8329785750700569,
+  "match": {
+    "status": "FAILED_MASK_IDENTITY",
+    "confidence": "low",
+    "reason": "掩码定位复核未通过：去除重叠匹配后仍有不同位置的相近候选，差距 0.065 小于 0.070；不能采谱",
+    "best": {
+      "boxPx": [
+        247,
+        217,
+        302,
+        275
+      ],
+      "centerPx": [
+        272.8709046454768,
+        244.17750611246944
+      ],
+      "distancePx": 20.6009413687207,
+      "lengthRatio": 1.0478170602918586,
+      "widthRatio": 1.0652102182619922,
+      "areaRatio": 1.2434324767231324,
+      "contrastZ": 20.03270538078714,
+      "signalZ": 37.707001271375354,
+      "channel": "bright",
+      "score": -0.04287553733410654,
+      "thresholdZ": 6.0,
+      "closeKernelPx": 3
+    },
+    "secondScore": null,
+    "scoreMargin": null,
+    "candidateCount": 6
+  }
+}

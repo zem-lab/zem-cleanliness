@@ -1,0 +1,14 @@
+grpcio==1.76.0
+loguru==0.7.3
+mcp==1.30.0
+numpy==2.2.6
+onnxruntime==1.22.1
+opencv-contrib-python==4.13.0.92
+opencv-python==4.13.0.92
+protobuf==6.31.1
+pycryptodome==3.23.0
+pyzemrpc==1.2.6
+pytest==8.4.2
+reportlab==4.4.3
+pypdf==5.1.0
+scipy==1.18.0

@@ -1,0 +1,279 @@
+{
+  "rank": 56,
+  "sequence": 131,
+  "particleId": "d8a3a28e-231f-42e3-b3fd-f8ebbead5c44",
+  "label": "metal",
+  "status": "SUCCEEDED",
+  "lengthUm": 74.5,
+  "widthUm": 59.5,
+  "areaUm2": 2379.4,
+  "equivalentDiameterUm": 59.5,
+  "opticalAbPositionUm": {
+    "x": 23234.838835410264,
+    "y": -15482.055211632869
+  },
+  "targetStageUm": {
+    "x": -13806.59752744015,
+    "y": 8075.640579142815
+  },
+  "images": {
+    "opticalImage": "optical/0131.png",
+    "semRawImage": "sem/0131_attempt1.png",
+    "semDisplayImage": "sem/0131_attempt1.u8.png",
+    "semAnnotatedImage": "analysis_annotated/0131.png",
+    "semParticleImage": "analysis_particles/0131.png"
+  },
+  "captureAttempts": [
+    {
+      "attempt": 1,
+      "status": "MATCHED_HIGH",
+      "rawPath": "sem/0131_attempt1.png",
+      "displayPath": "sem/0131_attempt1.u8.png",
+      "match": {
+        "status": "MATCHED_HIGH",
+        "confidence": "high",
+        "reason": "掩码定位后从 SEM 像素分割；检测=-0.539，形貌差=0.268；光镜轮廓来源=customer_mask；模板与 SEM 轮廓 IoU=0.720",
+        "best": {
+          "boxPx": [
+            306,
+            191,
+            340,
+            227
+          ],
+          "centerPx": [
+            323.64402173913044,
+            210.34375
+          ],
+          "distancePx": 81.61009031428927,
+          "lengthRatio": 0.9156092701342281,
+          "widthRatio": 1.0422137605042017,
+          "areaRatio": 1.3216467275009658,
+          "contrastZ": 23.313003302072154,
+          "signalZ": 22.797058538535452,
+          "channel": "bright",
+          "score": -0.5391200623960408,
+          "thresholdZ": 6.0,
+          "closeKernelPx": 5
+        },
+        "secondScore": null,
+        "scoreMargin": null,
+        "candidateCount": 20
+      },
+      "maskVerification": {
+        "score": 0.9005230069160461,
+        "centerPixel": [
+          321.5,
+          210.5
+        ],
+        "angleDeg": 12.0,
+        "mirrored": false,
+        "scaleFactor": 1.0,
+        "maskSource": "customer_mask",
+        "status": "MATCH",
+        "runnerUpScore": -1.0,
+        "margin": 1.9005230069160461,
+        "runnerUp": null,
+        "hypothesisCount": 1238,
+        "runnerUpOverlapIoU": null,
+        "distinctHypothesisCount": 1,
+        "overlapSuppressedCount": 1237,
+        "searchTruncated": false,
+        "coarseAngleStepDeg": 5,
+        "fineAngleStepDeg": 1,
+        "reason": "",
+        "accepted": true,
+        "minimumMaskIoU": 0.5,
+        "initialCandidateCenterPx": [
+          323.7033374536465,
+          210.46600741656366
+        ],
+        "searchCropXyxy": [
+          276,
+          166,
+          368,
+          253
+        ],
+        "maskIoU": 0.72,
+        "selectedCenterPx": [
+          323.64402173913044,
+          210.34375
+        ],
+        "candidateCount": 20,
+        "relocated": false
+      }
+    }
+  ],
+  "energySpectrum": {
+    "schema_version": "1.0",
+    "source": "grpc_v2",
+    "mock": false,
+    "device": "192.168.0.15:6200",
+    "method": "EDS",
+    "unit": "percent",
+    "unit_label": "元素含量(%)",
+    "particle_label": "131",
+    "image_path": "C:\\path\\to\\ZEM Cleanliness\\documents\\tasks\\82599546-2f1d-40a8-b986-7fca42d99133\\sem\\0131_attempt1.u8.png",
+    "acquired_at": "2026-09-17T16:45:54",
+    "target": {
+      "mode": "particle_safe_interior_point",
+      "x": 326,
+      "y": 205
+    },
+    "zem_target": "192.168.0.15:61557",
+    "result_text": "Al=0.32\r\nC=59.93\r\nCa=0.36\r\nFe=16.49\r\nNa=0.25\r\nO=20.31\r\nSi=2.34",
+    "elements": [
+      {
+        "symbol": "C",
+        "value": 59.93
+      },
+      {
+        "symbol": "O",
+        "value": 20.31
+      },
+      {
+        "symbol": "Fe",
+        "value": 16.49
+      },
+      {
+        "symbol": "Si",
+        "value": 2.34
+      },
+      {
+        "symbol": "Ca",
+        "value": 0.36
+      },
+      {
+        "symbol": "Al",
+        "value": 0.32
+      },
+      {
+        "symbol": "Na",
+        "value": 0.25
+      }
+    ],
+    "elapsedSeconds": 13.1348623,
+    "accumulatedCounts": 104073,
+    "materialClassification": {
+      "materialClass": "Low Alloy Steel",
+      "parentClass": "Ferrous Metals(HV<400)",
+      "hardnessLabel": "HV<400",
+      "hardnessBand": "Below400",
+      "confidence": 1.0,
+      "matchedCriteria": [
+        "Fe 5-100 wt%",
+        "Fe 5-100 wt%",
+        "NOT Ni 2-100 wt%",
+        "Mn 0-2 wt%",
+        "NOT O 40-100 wt%",
+        "Cr 0-1.5 wt%"
+      ],
+      "warnings": [],
+      "isUnclassified": false
+    },
+    "spectrumImage": {
+      "mediaType": "image/png",
+      "width": 800,
+      "height": 450,
+      "path": "spectra/0131.png",
+      "bytes": 16906
+    }
+  },
+  "error": null,
+  "actualStageUm": {
+    "x": -13806.25,
+    "y": 8075.25
+  },
+  "stagePositionErrorUm": 0.522807219211158,
+  "match": {
+    "status": "MATCHED_HIGH",
+    "confidence": "high",
+    "reason": "掩码定位后从 SEM 像素分割；检测=-0.539，形貌差=0.268；光镜轮廓来源=customer_mask；模板与 SEM 轮廓 IoU=0.720",
+    "best": {
+      "boxPx": [
+        306,
+        191,
+        340,
+        227
+      ],
+      "centerPx": [
+        323.64402173913044,
+        210.34375
+      ],
+      "distancePx": 81.61009031428927,
+      "lengthRatio": 0.9156092701342281,
+      "widthRatio": 1.0422137605042017,
+      "areaRatio": 1.3216467275009658,
+      "contrastZ": 23.313003302072154,
+      "signalZ": 22.797058538535452,
+      "channel": "bright",
+      "score": -0.5391200623960408,
+      "thresholdZ": 6.0,
+      "closeKernelPx": 5
+    },
+    "secondScore": null,
+    "scoreMargin": null,
+    "candidateCount": 20
+  },
+  "maskVerification": {
+    "score": 0.9005230069160461,
+    "centerPixel": [
+      321.5,
+      210.5
+    ],
+    "angleDeg": 12.0,
+    "mirrored": false,
+    "scaleFactor": 1.0,
+    "maskSource": "customer_mask",
+    "status": "MATCH",
+    "runnerUpScore": -1.0,
+    "margin": 1.9005230069160461,
+    "runnerUp": null,
+    "hypothesisCount": 1238,
+    "runnerUpOverlapIoU": null,
+    "distinctHypothesisCount": 1,
+    "overlapSuppressedCount": 1237,
+    "searchTruncated": false,
+    "coarseAngleStepDeg": 5,
+    "fineAngleStepDeg": 1,
+    "reason": "",
+    "accepted": true,
+    "minimumMaskIoU": 0.5,
+    "initialCandidateCenterPx": [
+      323.7033374536465,
+      210.46600741656366
+    ],
+    "searchCropXyxy": [
+      276,
+      166,
+      368,
+      253
+    ],
+    "maskIoU": 0.72,
+    "selectedCenterPx": [
+      323.64402173913044,
+      210.34375
+    ],
+    "candidateCount": 20,
+    "relocated": false
+  },
+  "localization": {
+    "observedStageUm": {
+      "x": -13666.425931626472,
+      "y": 7980.875915527344
+    },
+    "centerErrorUm": 169.1993432112146,
+    "safePointPx": [
+      326,
+      205
+    ],
+    "safeBoundaryDistancePx": 11.0
+  },
+  "aspect": 1.0666666666666667,
+  "roundness": 0.6425880153550294,
+  "edsAttempts": [
+    {
+      "attempt": 1,
+      "status": "SUCCEEDED"
+    }
+  ]
+}

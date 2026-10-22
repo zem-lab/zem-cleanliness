@@ -1,0 +1,315 @@
+{
+  "sourceTaskId": "8e3a30d2-6001-4b59-ae88-a158c37456ca",
+  "sourceSha256": "e65c83a1bc2895f75b320a389b8683892c224c39fe66d550573b20affeeb7032",
+  "opticalSha256": "a23c6ff31520370d9348b8aeae82580ac6bcb2bf8aba6009210b19373862435b",
+  "pixelSizeUm": 2.0670572916666665,
+  "cases": [
+    {
+      "rank": 8,
+      "sequence": 2,
+      "attempt": 1,
+      "image": "sem/0002_1.png",
+      "imageSha256": "129116d06d69d793ff953439c1b3bac8ce6e3351d0ff66336623ed95372afc7a",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        252.51374663072775,
+        155.76927223719676
+      ],
+      "role": "angle_sampling"
+    },
+    {
+      "rank": 8,
+      "sequence": 2,
+      "attempt": 2,
+      "image": "sem/0002_2.png",
+      "imageSha256": "05688f5fecdaf51543c310ac15ee7a1cb35d78c4f40de4eebdbb226610b632a0",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        252.51374663072775,
+        155.76927223719676
+      ],
+      "role": "angle_sampling"
+    },
+    {
+      "rank": 38,
+      "sequence": 38,
+      "attempt": 1,
+      "image": "sem/0038_1.png",
+      "imageSha256": "1d4c688ed3ea50cc4e26e1b3311ab3ce9aa72dfc1042e3a99dd9c420de757226",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        303.34991568296795,
+        147.32883642495784
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 38,
+      "sequence": 38,
+      "attempt": 2,
+      "image": "sem/0038_2.png",
+      "imageSha256": "a3708f5b0a852fc1b12d7ea2dbd28dbc89844d5f475f2781c9ba4830d53a3960",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        303.34991568296795,
+        147.32883642495784
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 42,
+      "sequence": 7,
+      "attempt": 1,
+      "image": "sem/0007_1.png",
+      "imageSha256": "7c01b5f8291778ed179cca2c32d56f9f7f2319b39bbb2f9bdda92939014e2b3e",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        304.21001926782276,
+        139.30154142581887
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 42,
+      "sequence": 7,
+      "attempt": 2,
+      "image": "sem/0007_2.png",
+      "imageSha256": "e3410803589655b90f690fca4bd1743fbfe1adfd043ae9a6d32ec8ebb457159a",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        304.21001926782276,
+        139.30154142581887
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 73,
+      "sequence": 33,
+      "attempt": 1,
+      "image": "sem/0033_1.png",
+      "imageSha256": "6f23f8e4fdafb9b300e5352804cb770006c7d39728d8a7f5a6e6c73c89d36567",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        319.5164369034995,
+        167.1728525980912
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 73,
+      "sequence": 33,
+      "attempt": 2,
+      "image": "sem/0033_2.png",
+      "imageSha256": "f54b7a5b3c1678686f5aa26a424f0659f4ce981059cfb6f483493051c4f343ba",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        319.5164369034995,
+        167.1728525980912
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 84,
+      "sequence": 93,
+      "attempt": 1,
+      "image": "sem/0093_1.png",
+      "imageSha256": "3e8a98e0adb6b50d90f3afdfd01f51427836c6aefc189bf08251b15ce359e1d3",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        323.581589958159,
+        135.62203626220364
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 84,
+      "sequence": 93,
+      "attempt": 2,
+      "image": "sem/0093_2.png",
+      "imageSha256": "1db9c74e32bc609b529af67e0a569f532bb0770cda5173a4ced3d278f1b8e568",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        323.581589958159,
+        135.62203626220364
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 88,
+      "sequence": 39,
+      "attempt": 1,
+      "image": "sem/0039_1.png",
+      "imageSha256": "333f742734a71c39e26dd21f5b3349b86b4522683a1c0cf985f93e239bfa3124",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        278.180608365019,
+        160.6568441064639
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 88,
+      "sequence": 39,
+      "attempt": 2,
+      "image": "sem/0039_2.png",
+      "imageSha256": "88c234ce333d3820cd49ad64b4391a40ebfb72fbf7aae081f446e1b5d7928ce6",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        278.180608365019,
+        160.6568441064639
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 90,
+      "sequence": 12,
+      "attempt": 1,
+      "image": "sem/0012_1.png",
+      "imageSha256": "8d5d3d6467c2718d59c920a3b177bdda631970d40501256373a47669c69341ca",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        310.50414201183435,
+        135.05207100591716
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 90,
+      "sequence": 12,
+      "attempt": 2,
+      "image": "sem/0012_2.png",
+      "imageSha256": "88e8fdcbe39d86dda1d1a7a95aa93a90044eb69f8be5aae4dcc2fe0e32b834fc",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        310.50414201183435,
+        135.05207100591716
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 111,
+      "sequence": 30,
+      "attempt": 1,
+      "image": "sem/0030_1.png",
+      "imageSha256": "064195d012a55b35c7c35c22274716c04423eb86959cd1124626d54d3dda32ed",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        269.3980582524272,
+        185.42111650485435
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 111,
+      "sequence": 30,
+      "attempt": 2,
+      "image": "sem/0030_2.png",
+      "imageSha256": "d7ba70d1de9ff70f09b967ef73155c07bb91a9a405f16aaa5fe054c67abe554c",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        269.3980582524272,
+        185.42111650485435
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 118,
+      "sequence": 232,
+      "attempt": 1,
+      "image": "sem/0232_1.png",
+      "imageSha256": "8093d637ca4bb0804fb01a720090f8b46cf3a45150686e507768367318642745",
+      "expectedAccepted": false,
+      "expectedCenterPx": null,
+      "role": "distinct_competitor"
+    },
+    {
+      "rank": 118,
+      "sequence": 232,
+      "attempt": 2,
+      "image": "sem/0232_2.png",
+      "imageSha256": "0766fad21f76483d4815a1ef8ba5d5d475914cdb5d306c8f909ed4bccbaeff87",
+      "expectedAccepted": false,
+      "expectedCenterPx": null,
+      "role": "distinct_competitor"
+    },
+    {
+      "rank": 122,
+      "sequence": 19,
+      "attempt": 1,
+      "image": "sem/0019_1.png",
+      "imageSha256": "621d02c9360ef5aef364c3cb53cf9d0cfa126e9e69d5b4a66025974993c4d447",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        301.5528068506185,
+        189.28449096098953
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 122,
+      "sequence": 19,
+      "attempt": 2,
+      "image": "sem/0019_2.png",
+      "imageSha256": "5e58becb044a72a08add7d66e1044fc4ddfab3b482d9dcc58f11df9a21c8920f",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        301.5528068506185,
+        189.28449096098953
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 135,
+      "sequence": 23,
+      "attempt": 1,
+      "image": "sem/0023_1.png",
+      "imageSha256": "1a6f3af89e586e24692df11f6d8b895236f7c574962f84f5ae82352a34b68da8",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        265.03794369645044,
+        215.64749082007344
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 135,
+      "sequence": 23,
+      "attempt": 2,
+      "image": "sem/0023_2.png",
+      "imageSha256": "9e95d89bf5fcbf23db09bd920d79a034421f82e2c805ac4480319420ab5f9c0a",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        265.03794369645044,
+        215.64749082007344
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 140,
+      "sequence": 53,
+      "attempt": 1,
+      "image": "sem/0053_1.png",
+      "imageSha256": "60ebb2d56763eb55a59e1025de2ec68e7fc5391eba1bac7d33b8554e9856319d",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        291.6868131868132,
+        222.3598901098901
+      ],
+      "role": "reported_false_rejection"
+    },
+    {
+      "rank": 140,
+      "sequence": 53,
+      "attempt": 2,
+      "image": "sem/0053_2.png",
+      "imageSha256": "8fa23833ba67d883eba2c56a3b670ccbcde769d8b8fb5da07f85fd4a65286cf0",
+      "expectedAccepted": true,
+      "expectedCenterPx": [
+        291.6868131868132,
+        222.3598901098901
+      ],
+      "role": "reported_false_rejection"
+    }
+  ],
+  "note": "User-reported false rejections with software-derived center references, not independent manual center ground truth. Rank118 remains a negative ambiguity case."
+}

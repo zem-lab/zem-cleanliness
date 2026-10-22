@@ -1,0 +1,171 @@
+{
+  "rank": 98,
+  "sequence": 6,
+  "particleId": "f3715646-2a7f-490c-bbf4-0899d2266eac",
+  "label": "metal",
+  "status": "FAILED",
+  "lengthUm": 1244.2,
+  "widthUm": 400.9,
+  "areaUm2": 348247.4,
+  "equivalentDiameterUm": 400.9,
+  "opticalAbPositionUm": {
+    "x": 40947.86774361532,
+    "y": -15679.279783455613
+  },
+  "targetStageUm": {
+    "x": -1352.4722682694555,
+    "y": 20611.23566488413
+  },
+  "images": {
+    "opticalImage": "optical/0006.png"
+  },
+  "captureAttempts": [
+    {
+      "attempt": 1,
+      "status": "FAILED_CENTER_SAMPLING",
+      "rawPath": "sem/0006_attempt1.png",
+      "displayPath": "sem/0006_attempt1.u8.png",
+      "match": {
+        "status": "FAILED_CENTER_SAMPLING",
+        "confidence": "unverified",
+        "reason": "中心区域缺少可靠颗粒信号，未执行中心采谱",
+        "best": null,
+        "secondScore": null,
+        "scoreMargin": null,
+        "candidateCount": 0
+      },
+      "maskVerification": null,
+      "centerSampling": {
+        "mode": "large_particle_center_region",
+        "status": "REJECTED",
+        "eligible": true,
+        "identityVerified": false,
+        "contourMatchingSkipped": true,
+        "policy": {
+          "enabled": true,
+          "minimumLengthToFieldWidth": 1.0,
+          "centerRegionRadiusFraction": 0.05,
+          "minimumCenterCoverage": 0.9,
+          "minimumIntensitySeparation": 20.0,
+          "minimumPointClearancePx": 3.0
+        },
+        "fieldWidthUm": 1058.3333333333333,
+        "fieldHeightUm": 1058.3333333333333,
+        "particleLengthUm": 1244.2,
+        "lengthToFieldWidth": 1.1756220472440946,
+        "imageCenterPx": [
+          256,
+          256
+        ],
+        "centerRegionXyxy": [
+          230,
+          230,
+          283,
+          283
+        ],
+        "centerCoverage": 0.8551085795656818,
+        "intensityThreshold": 116.0,
+        "intensitySeparation": 160.0,
+        "reason": "中心区域缺少可靠颗粒信号，未执行中心采谱"
+      }
+    },
+    {
+      "attempt": 2,
+      "status": "FAILED_CENTER_SAMPLING",
+      "rawPath": "sem/0006_attempt2.png",
+      "displayPath": "sem/0006_attempt2.u8.png",
+      "match": {
+        "status": "FAILED_CENTER_SAMPLING",
+        "confidence": "unverified",
+        "reason": "中心区域缺少可靠颗粒信号，未执行中心采谱",
+        "best": null,
+        "secondScore": null,
+        "scoreMargin": null,
+        "candidateCount": 0
+      },
+      "maskVerification": null,
+      "centerSampling": {
+        "mode": "large_particle_center_region",
+        "status": "REJECTED",
+        "eligible": true,
+        "identityVerified": false,
+        "contourMatchingSkipped": true,
+        "policy": {
+          "enabled": true,
+          "minimumLengthToFieldWidth": 1.0,
+          "centerRegionRadiusFraction": 0.05,
+          "minimumCenterCoverage": 0.9,
+          "minimumIntensitySeparation": 20.0,
+          "minimumPointClearancePx": 3.0
+        },
+        "fieldWidthUm": 1058.3333333333333,
+        "fieldHeightUm": 1058.3333333333333,
+        "particleLengthUm": 1244.2,
+        "lengthToFieldWidth": 1.1756220472440946,
+        "imageCenterPx": [
+          256,
+          256
+        ],
+        "centerRegionXyxy": [
+          230,
+          230,
+          283,
+          283
+        ],
+        "centerCoverage": 0.8551085795656818,
+        "intensityThreshold": 117.0,
+        "intensitySeparation": 161.0,
+        "reason": "中心区域缺少可靠颗粒信号，未执行中心采谱"
+      }
+    }
+  ],
+  "energySpectrum": null,
+  "error": "连续 2 次采图/匹配失败：中心区域缺少可靠颗粒信号，未执行中心采谱",
+  "actualStageUm": {
+    "x": -1352.5,
+    "y": 20610.75
+  },
+  "stagePositionErrorUm": 0.48645598830368114,
+  "centerSampling": {
+    "mode": "large_particle_center_region",
+    "status": "REJECTED",
+    "eligible": true,
+    "identityVerified": false,
+    "contourMatchingSkipped": true,
+    "policy": {
+      "enabled": true,
+      "minimumLengthToFieldWidth": 1.0,
+      "centerRegionRadiusFraction": 0.05,
+      "minimumCenterCoverage": 0.9,
+      "minimumIntensitySeparation": 20.0,
+      "minimumPointClearancePx": 3.0
+    },
+    "fieldWidthUm": 1058.3333333333333,
+    "fieldHeightUm": 1058.3333333333333,
+    "particleLengthUm": 1244.2,
+    "lengthToFieldWidth": 1.1756220472440946,
+    "imageCenterPx": [
+      256,
+      256
+    ],
+    "centerRegionXyxy": [
+      230,
+      230,
+      283,
+      283
+    ],
+    "centerCoverage": 0.8551085795656818,
+    "intensityThreshold": 117.0,
+    "intensitySeparation": 161.0,
+    "reason": "中心区域缺少可靠颗粒信号，未执行中心采谱"
+  },
+  "match": {
+    "status": "FAILED_CENTER_SAMPLING",
+    "confidence": "unverified",
+    "reason": "中心区域缺少可靠颗粒信号，未执行中心采谱",
+    "best": null,
+    "secondScore": null,
+    "scoreMargin": null,
+    "candidateCount": 0
+  }
+}
